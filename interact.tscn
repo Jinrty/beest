@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://ccl1ub4e7yjio"]
+
+[ext_resource type="Script" path="res://interact.gd" id="1_b4rpi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dwaaj"]
+size = Vector2(28, 27)
+
+[node name="Interact" type="Area2D"]
+script = ExtResource("1_b4rpi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_dwaaj")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

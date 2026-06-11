@@ -1,16 +1,37 @@
-[gd_scene load_steps=3 format=3 uid="uid://4tt01l71fff2"]
+[gd_scene load_steps=21 format=3 uid="uid://4tt01l71fff2"]
 
 [ext_resource type="PackedScene" uid="uid://dpmnucvcojqt1" path="res://player.tscn" id="1_duym8"]
+[ext_resource type="PackedScene" uid="uid://ccl1ub4e7yjio" path="res://interact.tscn" id="2_ju24m"]
+[ext_resource type="PackedScene" uid="uid://ddumcdtfamlhq" path="res://door.tscn" id="3_0pimg"]
+[ext_resource type="Texture2D" uid="uid://doldxrpmy7b6b" path="res://sprites/background.png" id="4_6m1m1"]
+[ext_resource type="Texture2D" uid="uid://djsuje4wtq45m" path="res://sprites/cushion2.png" id="6_7f6dn"]
+[ext_resource type="Texture2D" uid="uid://dc1lv011jvcqe" path="res://sprites/cobweb.png" id="6_jjv4q"]
+[ext_resource type="Texture2D" uid="uid://dlwk138s1m2rl" path="res://sprites/cushion.png" id="7_e4y8n"]
+[ext_resource type="Texture2D" uid="uid://bp1v2kmi5acui" path="res://sprites/shelf.png" id="8_e6ipg"]
+[ext_resource type="Texture2D" uid="uid://0cuhvfy4lpev" path="res://sprites/cactus.png" id="8_owp5f"]
+[ext_resource type="Texture2D" uid="uid://cfg4oa1jtnmed" path="res://sprites/snake-poster.png" id="9_f0oty"]
+[ext_resource type="Texture2D" uid="uid://1nex33t23a5r" path="res://sprites/posters.png" id="10_fonkk"]
+[ext_resource type="Texture2D" uid="uid://d1oq0kxgadncg" path="res://sprites/not-sure.png" id="11_m3bmn"]
+[ext_resource type="Texture2D" uid="uid://dluqb2am15ejn" path="res://sprites/lamp.png" id="12_kyhnx"]
+[ext_resource type="Texture2D" uid="uid://b3oilsvl1us7v" path="res://sprites/door.png" id="13_efbsc"]
+[ext_resource type="PackedScene" uid="uid://c8pogrne27kl2" path="res://solid_decoration.tscn" id="15_wj710"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iv12d"]
 size = Vector2(291, 20)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ropw1"]
+size = Vector2(499, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iou2r"]
+size = Vector2(20, 324)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uaef8"]
+size = Vector2(510, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eg3hh"]
+size = Vector2(14.5, 337)
+
 [node name="Main" type="Node2D"]
-
-[node name="Player" parent="." instance=ExtResource("1_duym8")]
-position = Vector2(292, 212)
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
 z_index = -1
@@ -30,3 +51,99 @@ offset_top = 238.0
 offset_right = 440.0
 offset_bottom = 258.0
 color = Color(0, 0, 0, 1)
+
+[node name="Interact" parent="." instance=ExtResource("2_ju24m")]
+position = Vector2(257, 151)
+
+[node name="Door" parent="." node_paths=PackedStringArray("where") instance=ExtResource("3_0pimg")]
+position = Vector2(211.631, 166.928)
+scale = Vector2(1.07513, 1.07513)
+texture = ExtResource("13_efbsc")
+where = NodePath("../Door2")
+
+[node name="Door2" parent="." node_paths=PackedStringArray("where") instance=ExtResource("3_0pimg")]
+position = Vector2(410, 209)
+where = NodePath("../Door")
+
+[node name="Player_room" type="Node2D" parent="."]
+position = Vector2(1041, 202)
+
+[node name="Background" type="Sprite2D" parent="Player_room"]
+texture_filter = 1
+position = Vector2(135, 100)
+texture = ExtResource("4_6m1m1")
+
+[node name="Cobweb" type="Sprite2D" parent="Player_room"]
+texture_filter = 1
+position = Vector2(350, -28)
+texture = ExtResource("6_jjv4q")
+
+[node name="Cushion2" type="Sprite2D" parent="Player_room"]
+position = Vector2(118, 223)
+texture = ExtResource("6_7f6dn")
+
+[node name="Cushion" type="Sprite2D" parent="Player_room"]
+position = Vector2(44, 221)
+texture = ExtResource("7_e4y8n")
+
+[node name="Cactus" type="Sprite2D" parent="Player_room"]
+position = Vector2(-73, 56)
+texture = ExtResource("8_owp5f")
+
+[node name="Solid Decoration" parent="Player_room" instance=ExtResource("15_wj710")]
+position = Vector2(-55, 169)
+sprite = ExtResource("8_e6ipg")
+
+[node name="Sprite2D" parent="Player_room/Solid Decoration" index="0"]
+texture = ExtResource("8_e6ipg")
+
+[node name="CollisionShape2D" parent="Player_room/Solid Decoration" index="1"]
+position = Vector2(1, 0)
+
+[node name="Snake-poster" type="Sprite2D" parent="Player_room"]
+position = Vector2(119, 115)
+texture = ExtResource("9_f0oty")
+
+[node name="Posters" type="Sprite2D" parent="Player_room"]
+position = Vector2(266, 40)
+texture = ExtResource("10_fonkk")
+
+[node name="Not-sure" type="Sprite2D" parent="Player_room"]
+position = Vector2(360, 198)
+texture = ExtResource("11_m3bmn")
+
+[node name="Lamp" type="Sprite2D" parent="Player_room"]
+position = Vector2(118, -26)
+texture = ExtResource("12_kyhnx")
+
+[node name="Door" type="Sprite2D" parent="Player_room"]
+position = Vector2(266, 173)
+texture = ExtResource("13_efbsc")
+
+[node name="Solid" type="StaticBody2D" parent="Player_room"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player_room/Solid"]
+position = Vector2(123.5, 248)
+shape = SubResource("RectangleShape2D_ropw1")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Player_room/Solid"]
+position = Vector2(382, 95)
+shape = SubResource("RectangleShape2D_iou2r")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Player_room/Solid"]
+position = Vector2(137, -72)
+shape = SubResource("RectangleShape2D_uaef8")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Player_room/Solid"]
+position = Vector2(-130.25, 85.5)
+shape = SubResource("RectangleShape2D_eg3hh")
+
+[node name="Player" parent="." instance=ExtResource("1_duym8")]
+z_index = 1
+position = Vector2(1219, 417)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(0, -68)
+zoom = Vector2(1.4, 1.4)
+
+[editable path="Player_room/Solid Decoration"]

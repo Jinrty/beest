@@ -11,7 +11,12 @@ var time_in_air:float = 0.0
 var direction:int
 var jump_pause:bool = false
 
+var can_move:bool = true
+
 func take_input() -> void:
+	if (can_move == false):
+		return
+		
 	direction = Input.get_axis("move_left", "move_right")
 
 	if Input.is_action_pressed("jump"):
@@ -28,7 +33,11 @@ func jump() -> void:
 		velocity.y = JUMP_VELOCITY
 		can_jump = false
 		already_on_floor = false
-
+		
+		
+func teleport(where) -> void:
+	global_position = where.position
+	
 
 func _physics_process(delta: float) -> void:
 	take_input()
@@ -37,7 +46,6 @@ func _physics_process(delta: float) -> void:
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-
 
 	if not is_on_floor():
 
