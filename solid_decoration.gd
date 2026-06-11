@@ -9,3 +9,4 @@ extends StaticBody2D
 		
 func _ready() -> void:
 	get_parent().set_editable_instance(self, true)
+	$CollisionShape2D.shape = $CollisionShape2D.shape.duplicate()

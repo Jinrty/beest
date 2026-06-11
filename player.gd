@@ -36,7 +36,8 @@ func jump() -> void:
 		
 		
 func teleport(where) -> void:
-	global_position = where.position
+	global_position = where.global_position
+	print(where.position)
 	
 
 func _physics_process(delta: float) -> void:
