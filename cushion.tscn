@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dmdofi7dxaihn"]
 
 [ext_resource type="Script" path="res://cushion.gd" id="1_aqdmm"]
-[ext_resource type="Texture2D" uid="uid://dlwk138s1m2rl" path="res://sprites/cushion.png" id="1_mm5qi"]
+[ext_resource type="Texture2D" uid="uid://dlwk138s1m2rl" path="res://sprites/player room/cushion.png" id="1_mm5qi"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dru4l"]
 radius = 5.99998

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfg4oa1jtnmed"
-path="res://.godot/imported/snake-poster.png-a9b327395653a02bc575f3b5374f6812.ctex"
+uid="uid://b1gomlpjqbqpo"
+path="res://.godot/imported/metal_shelf.png-eb15e830765a918b6e3f35cd54e8ae93.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/snake-poster.png"
-dest_files=["res://.godot/imported/snake-poster.png-a9b327395653a02bc575f3b5374f6812.ctex"]
+source_file="res://sprites/corridor/metal_shelf.png"
+dest_files=["res://.godot/imported/metal_shelf.png-eb15e830765a918b6e3f35cd54e8ae93.ctex"]
 
 [params]
 

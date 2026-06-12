@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0cuhvfy4lpev"
-path="res://.godot/imported/cactus.png-3aa02429ecbf9037b69411f160a29b03.ctex"
+uid="uid://cjv322i2d32cm"
+path="res://.godot/imported/box.png-b4681bc6f1211d925fe51c09e772b848.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/cactus.png"
-dest_files=["res://.godot/imported/cactus.png-3aa02429ecbf9037b69411f160a29b03.ctex"]
+source_file="res://sprites/corridor/box.png"
+dest_files=["res://.godot/imported/box.png-b4681bc6f1211d925fe51c09e772b848.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0x37nc7ihcxp"
-path="res://.godot/imported/player room.png-ffbbf418d6f4b416ba1f07e8264a7cad.ctex"
+uid="uid://0cuhvfy4lpev"
+path="res://.godot/imported/cactus.png-114116fb348caac4d2f257fa0e3caa30.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/player room.png"
-dest_files=["res://.godot/imported/player room.png-ffbbf418d6f4b416ba1f07e8264a7cad.ctex"]
+source_file="res://sprites/player room/cactus.png"
+dest_files=["res://.godot/imported/cactus.png-114116fb348caac4d2f257fa0e3caa30.ctex"]
 
 [params]
 

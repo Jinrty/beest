@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dc1lv011jvcqe"
-path="res://.godot/imported/cobweb.png-382d1c254526fc24199b67b5ad945ea0.ctex"
+uid="uid://dvbhkeli6u6cg"
+path="res://.godot/imported/electrical_box.png-62d4f4f585cea3e089af59322badd2d5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/cobweb.png"
-dest_files=["res://.godot/imported/cobweb.png-382d1c254526fc24199b67b5ad945ea0.ctex"]
+source_file="res://sprites/corridor/electrical_box.png"
+dest_files=["res://.godot/imported/electrical_box.png-62d4f4f585cea3e089af59322badd2d5.ctex"]
 
 [params]
 

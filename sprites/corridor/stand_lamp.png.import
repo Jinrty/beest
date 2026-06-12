@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dlwk138s1m2rl"
-path="res://.godot/imported/cushion.png-b6107b9d318d29adc317a45f5b913a8c.ctex"
+uid="uid://upgdjuffhq17"
+path="res://.godot/imported/stand_lamp.png-5be3cf4fc80f667d62e8e70e94d72473.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/cushion.png"
-dest_files=["res://.godot/imported/cushion.png-b6107b9d318d29adc317a45f5b913a8c.ctex"]
+source_file="res://sprites/corridor/stand_lamp.png"
+dest_files=["res://.godot/imported/stand_lamp.png-5be3cf4fc80f667d62e8e70e94d72473.ctex"]
 
 [params]
 

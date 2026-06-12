@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djsuje4wtq45m"
-path="res://.godot/imported/cushion2.png-d21a5726f54fceabc618379db50f50c7.ctex"
+uid="uid://gnv2kn40i8i3"
+path="res://.godot/imported/player.png-5c3a38aef90c29dfc6cd9319c43adf6b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/cushion2.png"
-dest_files=["res://.godot/imported/cushion2.png-d21a5726f54fceabc618379db50f50c7.ctex"]
+source_file="res://sprites/player room/player.png"
+dest_files=["res://.godot/imported/player.png-5c3a38aef90c29dfc6cd9319c43adf6b.ctex"]
 
 [params]
 
