@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://door.gd" id="2_idcyn"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_lu8qt"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qhs60"]
 
 [node name="Door" type="Area2D"]
 position = Vector2(-1, -1)
@@ -15,7 +15,7 @@ scale = Vector2(2.16673, 2.16673)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1.08475, -2.14577e-06)
-shape = SubResource("RectangleShape2D_lu8qt")
+shape = SubResource("RectangleShape2D_qhs60")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]

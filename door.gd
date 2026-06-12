@@ -25,7 +25,6 @@ func _on_body_entered(body: Node2D) -> void:
 	if(body.name == "Player"):
 		inside = true
 		player = body
-		print("g")
 
 
 func _on_body_exited(body: Node2D) -> void:
