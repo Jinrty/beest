@@ -49,7 +49,7 @@ func change_item():
 	else:
 		current_item += 1
 		
-	hold_item(inventory[current_item ])
+	hold_item(inventory[current_item])
 
 func jump() -> void:
 	if(jump_pause == false):
@@ -64,8 +64,26 @@ func teleport(where) -> void:
 	print(where.position)
 	
 
+func animate_player():
+	if(velocity.x > 0):
+		$Player_sprite.flip_h = false
+	else:
+		$Player_sprite.flip_h = true
+	if(velocity.y < 0):
+		$Player_sprite.animation = "jump"
+	elif(velocity.y > 0):
+		$Player_sprite.animation = "fall"
+	else:
+		if(velocity.x == 0):
+			$Player_sprite.animation = "standing"
+		else:
+			$Player_sprite.animation = "walk"
+		
+	
+
 func _physics_process(delta: float) -> void:
 	take_input()
+	animate_player()
 
 	if direction:
 		velocity.x = direction * SPEED

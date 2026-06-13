@@ -10,7 +10,7 @@ shader_parameter/color = Color(1, 1, 1, 1)
 shader_parameter/pixels_to_check = 4
 shader_parameter/center_distance_cap = 4
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_02f7r"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mjvw7"]
 radius = 43.0
 height = 86.0
 
@@ -24,7 +24,12 @@ texture = ExtResource("1_cqgir")
 [node name="Pickable" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Pickable"]
-shape = SubResource("CapsuleShape2D_02f7r")
+shape = SubResource("CapsuleShape2D_mjvw7")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10000.0
+one_shot = true
+autostart = true
 
 [connection signal="body_entered" from="Pickable" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Pickable" to="." method="_on_area_2d_body_exited"]
