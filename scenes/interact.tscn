@@ -1,12 +1,12 @@
 [gd_scene load_steps=3 format=3 uid="uid://ccl1ub4e7yjio"]
 
-[ext_resource type="Script" path="res://interact.gd" id="1_b4rpi"]
+[ext_resource type="Script" path="res://interact.gd" id="1_5jrgp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dwaaj"]
 size = Vector2(28, 27)
 
 [node name="Interact" type="Area2D"]
-script = ExtResource("1_b4rpi")
+script = ExtResource("1_5jrgp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_dwaaj")

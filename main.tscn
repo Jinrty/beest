@@ -1,9 +1,9 @@
-[gd_scene load_steps=44 format=3 uid="uid://4tt01l71fff2"]
+[gd_scene load_steps=48 format=3 uid="uid://4tt01l71fff2"]
 
-[ext_resource type="PackedScene" uid="uid://dpmnucvcojqt1" path="res://player.tscn" id="1_duym8"]
-[ext_resource type="PackedScene" uid="uid://ddumcdtfamlhq" path="res://door.tscn" id="3_0pimg"]
+[ext_resource type="PackedScene" uid="uid://dpmnucvcojqt1" path="res://scenes/player.tscn" id="1_duym8"]
+[ext_resource type="PackedScene" uid="uid://ddumcdtfamlhq" path="res://scenes/door.tscn" id="3_0pimg"]
 [ext_resource type="Texture2D" uid="uid://doldxrpmy7b6b" path="res://sprites/player room/background.png" id="4_6m1m1"]
-[ext_resource type="PackedScene" uid="uid://dmdofi7dxaihn" path="res://cushion.tscn" id="4_iivt3"]
+[ext_resource type="PackedScene" uid="uid://dmdofi7dxaihn" path="res://scenes/cushion.tscn" id="4_iivt3"]
 [ext_resource type="Texture2D" uid="uid://djsuje4wtq45m" path="res://sprites/player room/cushion2.png" id="6_7f6dn"]
 [ext_resource type="Texture2D" uid="uid://dc1lv011jvcqe" path="res://sprites/player room/cobweb.png" id="6_jjv4q"]
 [ext_resource type="Texture2D" uid="uid://bp1v2kmi5acui" path="res://sprites/player room/shelf.png" id="8_e6ipg"]
@@ -14,7 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://dluqb2am15ejn" path="res://sprites/player room/lamp.png" id="12_kyhnx"]
 [ext_resource type="Texture2D" uid="uid://b3oilsvl1us7v" path="res://sprites/player room/door.png" id="13_efbsc"]
 [ext_resource type="Texture2D" uid="uid://cka4bqyjw4gwk" path="res://sprites/corridor/background.png" id="15_52vq5"]
-[ext_resource type="PackedScene" uid="uid://c8pogrne27kl2" path="res://solid_decoration.tscn" id="15_wj710"]
+[ext_resource type="PackedScene" uid="uid://c8pogrne27kl2" path="res://scenes/solid_decoration.tscn" id="15_wj710"]
 [ext_resource type="Texture2D" uid="uid://dyc0533ntolc8" path="res://sprites/corridor/pictures.png" id="17_qujqe"]
 [ext_resource type="Texture2D" uid="uid://cjv322i2d32cm" path="res://sprites/corridor/box.png" id="18_oovdx"]
 [ext_resource type="Texture2D" uid="uid://dvbhkeli6u6cg" path="res://sprites/corridor/electrical_box.png" id="19_aduyn"]
@@ -24,20 +24,22 @@
 [ext_resource type="Texture2D" uid="uid://upgdjuffhq17" path="res://sprites/corridor/stand_lamp.png" id="23_qbl3y"]
 [ext_resource type="Texture2D" uid="uid://m0g45imgbltd" path="res://sprites/corridor/pipe.png" id="24_sg2br"]
 [ext_resource type="Texture2D" uid="uid://dd051de7xipnu" path="res://sprites/corridor/door.png" id="25_jl1h0"]
+[ext_resource type="PackedScene" uid="uid://dltk5unkcgfs4" path="res://scenes/item.tscn" id="26_8o6kf"]
+[ext_resource type="Texture2D" uid="uid://rs3sayxhrx5i" path="res://icon.svg" id="27_s6lmt"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3kfsn"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s7t1r"]
 size = Vector2(79, 135)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_fj3bj"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wrv50"]
 size = Vector2(35, 11)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_peh8c"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t1k42"]
 size = Vector2(20, 11.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yx0k4"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_36wp4"]
 size = Vector2(44, 67)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mbfla"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xc0ut"]
 size = Vector2(169.221, 234.305)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ropw1"]
@@ -52,19 +54,19 @@ size = Vector2(510, 20)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eg3hh"]
 size = Vector2(14.5, 337)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_o1ks4"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ln07d"]
 size = Vector2(61.1875, 74)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_n8rh6"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_74036"]
 size = Vector2(171, 40)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_a0ccd"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rxx4p"]
 size = Vector2(42, 39)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_uvv6s"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4boj5"]
 size = Vector2(43, 51)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1irq2"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p7e7l"]
 size = Vector2(219.118, 273.356)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tlhgs"]
@@ -81,6 +83,14 @@ size = Vector2(48, 22)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cejtn"]
 size = Vector2(593, 20)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vqs4a"]
+radius = 43.0
+height = 86.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q1vcv"]
+radius = 43.0
+height = 86.0
 
 [node name="Main" type="Node2D"]
 
@@ -153,7 +163,7 @@ texture = ExtResource("8_e6ipg")
 
 [node name="CollisionShape2D" parent="Player_room/Solid Decorations/Shelf" index="1"]
 position = Vector2(0.5, -0.5)
-shape = SubResource("RectangleShape2D_3kfsn")
+shape = SubResource("RectangleShape2D_s7t1r")
 
 [node name="Step 1" parent="Player_room/Solid Decorations" instance=ExtResource("15_wj710")]
 position = Vector2(360, 198)
@@ -164,7 +174,7 @@ texture = ExtResource("11_m3bmn")
 
 [node name="CollisionShape2D" parent="Player_room/Solid Decorations/Step 1" index="1"]
 position = Vector2(-2.5, 17.5)
-shape = SubResource("RectangleShape2D_fj3bj")
+shape = SubResource("RectangleShape2D_wrv50")
 
 [node name="Step 2" parent="Player_room/Solid Decorations" instance=ExtResource("15_wj710")]
 position = Vector2(360, 198)
@@ -174,7 +184,7 @@ texture = ExtResource("11_m3bmn")
 
 [node name="CollisionShape2D" parent="Player_room/Solid Decorations/Step 2" index="1"]
 position = Vector2(7, -16.75)
-shape = SubResource("RectangleShape2D_peh8c")
+shape = SubResource("RectangleShape2D_t1k42")
 
 [node name="Lamp2" parent="Player_room/Solid Decorations" instance=ExtResource("15_wj710")]
 position = Vector2(118, -26)
@@ -185,7 +195,7 @@ texture = ExtResource("12_kyhnx")
 
 [node name="CollisionShape2D" parent="Player_room/Solid Decorations/Lamp2" index="1"]
 position = Vector2(-3, 3.5)
-shape = SubResource("RectangleShape2D_yx0k4")
+shape = SubResource("RectangleShape2D_36wp4")
 
 [node name="Funky" type="Node2D" parent="Player_room"]
 
@@ -208,7 +218,7 @@ texture = ExtResource("13_efbsc")
 
 [node name="CollisionShape2D" parent="Player_room/Funky/Door player inside" index="1"]
 position = Vector2(2.17041, 19.5255)
-shape = SubResource("RectangleShape2D_mbfla")
+shape = SubResource("RectangleShape2D_xc0ut")
 
 [node name="Walls" type="StaticBody2D" parent="Player_room"]
 
@@ -294,7 +304,7 @@ texture = ExtResource("18_oovdx")
 
 [node name="CollisionShape2D" parent="Corridor_end/Solid Decorations/Box" index="1"]
 position = Vector2(-3.59375, -2)
-shape = SubResource("RectangleShape2D_o1ks4")
+shape = SubResource("RectangleShape2D_ln07d")
 
 [node name="metal shelf" parent="Corridor_end/Solid Decorations" instance=ExtResource("15_wj710")]
 position = Vector2(1712, -947)
@@ -305,7 +315,7 @@ texture = ExtResource("20_t6wsm")
 
 [node name="CollisionShape2D" parent="Corridor_end/Solid Decorations/metal shelf" index="1"]
 position = Vector2(-3.5, -2)
-shape = SubResource("RectangleShape2D_n8rh6")
+shape = SubResource("RectangleShape2D_74036")
 
 [node name="Lamp" parent="Corridor_end/Solid Decorations" instance=ExtResource("15_wj710")]
 position = Vector2(1761, -783)
@@ -316,7 +326,7 @@ texture = ExtResource("23_qbl3y")
 
 [node name="CollisionShape2D" parent="Corridor_end/Solid Decorations/Lamp" index="1"]
 position = Vector2(1, -50.5)
-shape = SubResource("RectangleShape2D_a0ccd")
+shape = SubResource("RectangleShape2D_rxx4p")
 
 [node name="Solid Decoration" parent="Corridor_end/Solid Decorations" instance=ExtResource("15_wj710")]
 position = Vector2(1659, -1059)
@@ -327,7 +337,7 @@ texture = ExtResource("24_sg2br")
 
 [node name="CollisionShape2D" parent="Corridor_end/Solid Decorations/Solid Decoration" index="1"]
 position = Vector2(0.5, -5.5)
-shape = SubResource("RectangleShape2D_uvv6s")
+shape = SubResource("RectangleShape2D_4boj5")
 
 [node name="Funky" type="Node2D" parent="Corridor_end"]
 
@@ -341,7 +351,7 @@ texture = ExtResource("25_jl1h0")
 
 [node name="CollisionShape2D" parent="Corridor_end/Funky/Door player coridor" index="1"]
 position = Vector2(1.08472, 30.3728)
-shape = SubResource("RectangleShape2D_1irq2")
+shape = SubResource("RectangleShape2D_p7e7l")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Corridor_end"]
 position = Vector2(1127, -693)
@@ -378,6 +388,30 @@ position_smoothing_speed = 20.0
 [node name="Node2D" type="Node2D" parent="."]
 position = Vector2(123, -172)
 
+[node name="Bucket" parent="." instance=ExtResource("26_8o6kf")]
+position = Vector2(856, 1254)
+title = "Test taki"
+sprite = ExtResource("20_fk75h")
+
+[node name="Sprite2D" parent="Bucket" index="0"]
+position = Vector2(10, 0)
+texture = ExtResource("20_fk75h")
+
+[node name="CollisionShape2D" parent="Bucket/Pickable" index="0"]
+shape = SubResource("CapsuleShape2D_vqs4a")
+
+[node name="Error" parent="." instance=ExtResource("26_8o6kf")]
+position = Vector2(1329, 1312)
+title = "Error"
+sprite = ExtResource("27_s6lmt")
+
+[node name="Sprite2D" parent="Error" index="0"]
+position = Vector2(-2, -6)
+scale = Vector2(0.578125, 0.5625)
+
+[node name="CollisionShape2D" parent="Error/Pickable" index="0"]
+shape = SubResource("CapsuleShape2D_q1vcv")
+
 [editable path="Player_room/Solid Decorations/Shelf"]
 [editable path="Player_room/Solid Decorations/Step 1"]
 [editable path="Player_room/Solid Decorations/Step 2"]
@@ -390,3 +424,5 @@ position = Vector2(123, -172)
 [editable path="Corridor_end/Solid Decorations/Lamp"]
 [editable path="Corridor_end/Solid Decorations/Solid Decoration"]
 [editable path="Corridor_end/Funky/Door player coridor"]
+[editable path="Bucket"]
+[editable path="Error"]

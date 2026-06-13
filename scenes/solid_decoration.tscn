@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://solid_decoration.gd" id="1_ga6oc"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_b2vql"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r0wpl"]
 size = Vector2(68.375, 148.188)
 
 [node name="Solid Decoration" type="StaticBody2D"]
@@ -11,4 +11,4 @@ script = ExtResource("1_ga6oc")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_b2vql")
+shape = SubResource("RectangleShape2D_r0wpl")

@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://dltk5unkcgfs4"]
+
+[ext_resource type="Script" path="res://Item.gd" id="1_aplyw"]
+[ext_resource type="Texture2D" uid="uid://rs3sayxhrx5i" path="res://icon.svg" id="1_cqgir"]
+[ext_resource type="Shader" path="res://itemOutline.gdshader" id="2_nv41q"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0t8ic"]
+shader = ExtResource("2_nv41q")
+shader_parameter/color = Color(1, 1, 1, 1)
+shader_parameter/pixels_to_check = 4
+shader_parameter/center_distance_cap = 4
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_02f7r"]
+radius = 43.0
+height = 86.0
+
+[node name="Item" type="Node2D"]
+script = ExtResource("1_aplyw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_0t8ic")
+texture = ExtResource("1_cqgir")
+
+[node name="Pickable" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pickable"]
+shape = SubResource("CapsuleShape2D_02f7r")
+
+[connection signal="body_entered" from="Pickable" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Pickable" to="." method="_on_area_2d_body_exited"]

@@ -10,12 +10,17 @@ var gravity:int = 1700
 var time_in_air:float = 0.0
 var direction:int
 var jump_pause:bool = false
-
 var can_move:bool = true
+
+var inventory:Array = []
+var current_item:int = 0
 
 func take_input() -> void:
 	if (can_move == false):
 		return
+	
+	if Input.is_action_just_pressed("change_item"):
+		change_item()
 		
 	direction = Input.get_axis("move_left", "move_right")
 
@@ -26,6 +31,25 @@ func take_input() -> void:
 			$Jump_buffering.start()
 			buffer_jump = true
 	
+func add_item(item):
+	inventory.append(item)
+	current_item = inventory.size() -1
+	hold_item(item)
+	print(inventory[0].title)
+	print(inventory)
+
+func hold_item(item):
+	$Holded_item.texture = item.sprite
+
+func change_item():
+	if (inventory.is_empty()):
+		return
+	if (current_item == inventory.size() - 1):
+		current_item = 0
+	else:
+		current_item += 1
+		
+	hold_item(inventory[current_item ])
 
 func jump() -> void:
 	if(jump_pause == false):

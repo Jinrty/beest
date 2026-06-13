@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://kfn13qgns7pr"]
+
+[ext_resource type="Texture2D" uid="uid://gnv2kn40i8i3" path="res://sprites/player room/player.png" id="1_b6dj0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_17e7f"]
+radius = 17.0
+
+[node name="NPC" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.000432792, 0.282068, 0.889762, 1)
+position = Vector2(-2, -3)
+texture = ExtResource("1_b6dj0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_17e7f")

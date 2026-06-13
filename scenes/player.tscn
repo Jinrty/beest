@@ -20,6 +20,8 @@ radius = 18.0
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_rgbci")
 
+[node name="Holded_item" type="Sprite2D" parent="."]
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_swla6")
