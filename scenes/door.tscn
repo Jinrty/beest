@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://ddumcdtfamlhq"]
 
-[ext_resource type="Script" path="res://door.gd" id="2_idcyn"]
+[ext_resource type="Script" path="res://code_gd/door.gd" id="2_idcyn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_teqq7"]
 

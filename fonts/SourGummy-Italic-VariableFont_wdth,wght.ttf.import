@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://c38x8leugpuyh"
-path="res://.godot/imported/SourGummy-Italic-VariableFont_wdth,wght.ttf-0a57169fbf948c6c1adafc19acfcc388.fontdata"
+path="res://.godot/imported/SourGummy-Italic-VariableFont_wdth,wght.ttf-21864ae5c2fbb792b82b832344c9c54c.fontdata"
 
 [deps]
 
-source_file="res://SourGummy-Italic-VariableFont_wdth,wght.ttf"
-dest_files=["res://.godot/imported/SourGummy-Italic-VariableFont_wdth,wght.ttf-0a57169fbf948c6c1adafc19acfcc388.fontdata"]
+source_file="res://fonts/SourGummy-Italic-VariableFont_wdth,wght.ttf"
+dest_files=["res://.godot/imported/SourGummy-Italic-VariableFont_wdth,wght.ttf-21864ae5c2fbb792b82b832344c9c54c.fontdata"]
 
 [params]
 

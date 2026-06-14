@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://dmdofi7dxaihn"]
 
-[ext_resource type="Script" path="res://cushion.gd" id="1_aqdmm"]
+[ext_resource type="Script" path="res://code_gd/cushion.gd" id="1_aqdmm"]
 [ext_resource type="Texture2D" uid="uid://dlwk138s1m2rl" path="res://sprites/player room/cushion.png" id="1_mm5qi"]
 [ext_resource type="Texture2D" uid="uid://x2wd28b3cq1f" path="res://sprites/player room/cushion-Sheet.png" id="2_ktf25"]
 [ext_resource type="Texture2D" uid="uid://c0oiiphceutqv" path="res://sprites/player room/cushion2-Sheet.png" id="4_r1xmo"]

@@ -11,13 +11,13 @@ config_version=5
 [application]
 
 config/name="Beest"
-run/main_scene="res://main.tscn"
+run/main_scene="res://scenes/main.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://sprites/icon.svg"
 
 [autoload]
 
-Flags="*res://flags.gd"
+Flags="*res://code_gd/flags.gd"
 
 [display]
 

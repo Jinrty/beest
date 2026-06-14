@@ -16,7 +16,7 @@ var inventory:Array = ["Nothing"]
 var current_item:int = 0
 
 func _ready() -> void:
-	say("Please please please! let me watch One piece!!!")
+	say("Please please please! let me watch \n One piece!!!")
 
 func take_input() -> void:
 	if (can_move == false):
@@ -38,6 +38,7 @@ func add_item(item):
 	inventory.append(item)
 	current_item = inventory.size() -1
 	hold_item(item)
+	say(item.title, 80, 1.5)
 
 func hold_item(item):
 	$Holded_item.visible = true
@@ -60,6 +61,10 @@ func say(text: String, speed: float = 40, wait:float = 2):
 	$Sprite2D.visible = true
 	$Text.visible = true
 	$Text.text = text
+	
+	if(text.length() < 15):
+		$Text.add_theme_font_size_override("font_size", 20)
+	
 	for i in text.length() + 1:
 		$Text.visible_characters = i
 		await get_tree().create_timer(1 / speed).timeout
