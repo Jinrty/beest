@@ -12,7 +12,7 @@ var direction:int
 var jump_pause:bool = false
 var can_move:bool = true
 
-var inventory:Array = []
+var inventory:Array = ["Nothing"]
 var current_item:int = 0
 
 func _ready() -> void:
@@ -38,10 +38,9 @@ func add_item(item):
 	inventory.append(item)
 	current_item = inventory.size() -1
 	hold_item(item)
-	print(inventory[0].title)
-	print(inventory)
 
 func hold_item(item):
+	$Holded_item.visible = true
 	$Holded_item.texture = item.sprite
 
 func change_item():
@@ -51,8 +50,11 @@ func change_item():
 		current_item = 0
 	else:
 		current_item += 1
-		
-	hold_item(inventory[current_item])
+	
+	if(current_item != 0):
+		hold_item(inventory[current_item])
+	else:
+		$Holded_item.visible = false
 	
 func say(text: String, speed: float = 40, wait:float = 2):
 	$Sprite2D.visible = true

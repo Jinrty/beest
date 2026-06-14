@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://5ylw17cr1o8e"]
+
+[ext_resource type="Script" path="res://scenes/camera_2d.gd" id="1_1uaxh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wi4wu"]
+size = Vector2(20, 378)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_07b51"]
+size = Vector2(20, 379)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l33ng"]
+size = Vector2(720, 480)
+
+[node name="Camera2D" type="Camera2D"]
+script = ExtResource("1_1uaxh")
+
+[node name="Left" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Left"]
+position = Vector2(-200, 0)
+shape = SubResource("RectangleShape2D_wi4wu")
+
+[node name="Right" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Right"]
+position = Vector2(200, 0.5)
+shape = SubResource("RectangleShape2D_07b51")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_l33ng")
+
+[connection signal="body_entered" from="Left" to="." method="_on_left_body_entered"]
+[connection signal="body_exited" from="Left" to="." method="_on_left_body_exited"]
+[connection signal="body_entered" from="Right" to="." method="_on_right_body_entered"]
+[connection signal="body_exited" from="Right" to="." method="_on_right_body_exited"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
