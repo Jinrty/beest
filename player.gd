@@ -15,6 +15,9 @@ var can_move:bool = true
 var inventory:Array = []
 var current_item:int = 0
 
+func _ready() -> void:
+	say("Please please please! let me watch One piece!!!")
+
 func take_input() -> void:
 	if (can_move == false):
 		return
@@ -50,6 +53,23 @@ func change_item():
 		current_item += 1
 		
 	hold_item(inventory[current_item])
+	
+func say(text: String, speed: float = 40, wait:float = 2):
+	$Sprite2D.visible = true
+	$Text.visible = true
+	$Text.text = text
+	for i in text.length() + 1:
+		$Text.visible_characters = i
+		await get_tree().create_timer(1 / speed).timeout
+		
+	await get_tree().create_timer(wait).timeout
+	shut_up()
+
+func shut_up():
+	$Sprite2D.visible = false
+	$Text.visible = false
+	
+
 
 func jump() -> void:
 	if(jump_pause == false):
@@ -67,7 +87,7 @@ func teleport(where) -> void:
 func animate_player():
 	if(velocity.x > 0):
 		$Player_sprite.flip_h = false
-	else:
+	elif(velocity.x < 0):
 		$Player_sprite.flip_h = true
 	if(velocity.y < 0):
 		$Player_sprite.animation = "jump"
