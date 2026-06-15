@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://08ngsir06auv" path="res://sprites/npc/green kid.png" id="1_oyyxw"]
 [ext_resource type="PackedScene" uid="uid://dtde5ffj0cqfx" path="res://scenes/dialogue_component.tscn" id="3_dus57"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ihr8h"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yofdr"]
 size = Vector2(89, 88)
 
 [node name="NPC" type="Area2D"]
@@ -16,7 +16,7 @@ texture = ExtResource("1_oyyxw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.5, -2)
-shape = SubResource("RectangleShape2D_ihr8h")
+shape = SubResource("RectangleShape2D_yofdr")
 
 [node name="DialogueComponent" parent="." instance=ExtResource("3_dus57")]
 

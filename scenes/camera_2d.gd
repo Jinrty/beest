@@ -32,8 +32,6 @@ func _on_left_body_entered(body: Node2D) -> void:
 		player = body
 		move_x = true
 		offset_x = global_position.x - body.global_position.x
-		print(global_position.x)
-		print(body.global_position.x)
 
 
 func _on_right_body_entered(body: Node2D) -> void:
@@ -42,8 +40,6 @@ func _on_right_body_entered(body: Node2D) -> void:
 		player = body
 		move_x = true
 		offset_x = global_position.x - body.global_position.x
-		print(global_position.x)
-		print(body.global_position.x)
 
 
 func _on_left_body_exited(body: Node2D) -> void:

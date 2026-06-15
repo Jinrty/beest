@@ -95,11 +95,13 @@ script = ExtResource("1_rgbci")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 visible = false
+z_index = 1
 position = Vector2(1, -92)
 texture = ExtResource("2_381wl")
 
 [node name="Text" type="Label" parent="."]
 visible = false
+z_index = 1
 offset_left = -63.0
 offset_top = -127.0
 offset_right = 61.0

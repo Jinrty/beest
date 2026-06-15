@@ -54,6 +54,12 @@ func change_item():
 		hold_item(inventory[current_item])
 	else:
 		$Holded_item.visible = false
+
+func item_name() -> String:
+	if(current_item == 0):
+		return ""
+	else:
+		return inventory[current_item].title
 	
 func say(text: String, speed: float = 40, wait:float = 2):
 	$Sprite2D.visible = true
