@@ -94,8 +94,6 @@ func jump() -> void:
 		
 func teleport(where) -> void:
 	global_position = where.global_position
-	print(where.position)
-	
 
 func animate_player():
 	if(velocity.x > 0):

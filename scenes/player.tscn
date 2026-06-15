@@ -129,6 +129,10 @@ autoplay = "walk"
 position = Vector2(0, 3)
 shape = SubResource("CircleShape2D_ynjrc")
 
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(0, 24.5)
+shape = SubResource("RectangleShape2D_nh3fm")
+
 [node name="Coyot" type="Timer" parent="."]
 wait_time = 0.1
 one_shot = true
@@ -139,10 +143,6 @@ wait_time = 0.2
 [node name="Pause_in_jumps" type="Timer" parent="."]
 wait_time = 0.05
 one_shot = true
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(0, 24.5)
-shape = SubResource("RectangleShape2D_nh3fm")
 
 [connection signal="timeout" from="Coyot" to="." method="_on_coyot_timeout"]
 [connection signal="timeout" from="Jump_buffering" to="." method="_on_jump_buffering_timeout"]

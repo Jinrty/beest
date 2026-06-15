@@ -19,9 +19,10 @@ func on_interact() -> void:
 		if(current_path == x.path) and path_chosen:
 			lines_array.append(x.line)
 	path_chosen = false
-	print(lines_array)
+	player.can_move = false
 	for i in lines_array:
 		await say(i)
+	player.can_move = true
 
 func shut_up():
 	$Sprite2D.visible = false

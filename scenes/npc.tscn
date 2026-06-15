@@ -1,10 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://kfn13qgns7pr"]
+[gd_scene load_steps=4 format=3 uid="uid://kfn13qgns7pr"]
 
-[ext_resource type="Script" path="res://scenes/npc.gd" id="1_nme44"]
+[ext_resource type="Script" path="res://code_gd/npc.gd" id="1_nme44"]
 [ext_resource type="Texture2D" uid="uid://08ngsir06auv" path="res://sprites/npc/green kid.png" id="1_oyyxw"]
-[ext_resource type="PackedScene" uid="uid://dtde5ffj0cqfx" path="res://scenes/dialogue_component.tscn" id="3_dus57"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yofdr"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lsru4"]
 size = Vector2(89, 88)
 
 [node name="NPC" type="Area2D"]
@@ -16,9 +15,7 @@ texture = ExtResource("1_oyyxw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.5, -2)
-shape = SubResource("RectangleShape2D_yofdr")
-
-[node name="DialogueComponent" parent="." instance=ExtResource("3_dus57")]
+shape = SubResource("RectangleShape2D_lsru4")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
