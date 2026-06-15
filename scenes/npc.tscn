@@ -1,16 +1,24 @@
-[gd_scene load_steps=3 format=3 uid="uid://kfn13qgns7pr"]
+[gd_scene load_steps=5 format=3 uid="uid://kfn13qgns7pr"]
 
-[ext_resource type="Texture2D" uid="uid://gnv2kn40i8i3" path="res://sprites/player room/player.png" id="1_b6dj0"]
+[ext_resource type="Script" path="res://scenes/npc.gd" id="1_nme44"]
+[ext_resource type="Texture2D" uid="uid://08ngsir06auv" path="res://sprites/npc/green kid.png" id="1_oyyxw"]
+[ext_resource type="PackedScene" uid="uid://dtde5ffj0cqfx" path="res://scenes/dialogue_component.tscn" id="3_dus57"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_17e7f"]
-radius = 17.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ihr8h"]
+size = Vector2(89, 88)
 
-[node name="NPC" type="CharacterBody2D"]
+[node name="NPC" type="Area2D"]
+script = ExtResource("1_nme44")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-modulate = Color(0.000432792, 0.282068, 0.889762, 1)
 position = Vector2(-2, -3)
-texture = ExtResource("1_b6dj0")
+texture = ExtResource("1_oyyxw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_17e7f")
+position = Vector2(-1.5, -2)
+shape = SubResource("RectangleShape2D_ihr8h")
+
+[node name="DialogueComponent" parent="." instance=ExtResource("3_dus57")]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

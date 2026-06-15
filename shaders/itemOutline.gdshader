@@ -1,8 +1,8 @@
 shader_type canvas_item;
 
 uniform vec4 color : source_color = vec4(1.0);
-uniform int pixels_to_check = 1;
-uniform int center_distance_cap = 1;
+uniform int pixels_to_check = 3;
+uniform int center_distance_cap = 3;
 
 bool has_neighbor(vec2 uv, vec2 texture_pixel_size, sampler2D sprite_texture){
 	

@@ -15,8 +15,6 @@ var can_move:bool = true
 var inventory:Array = ["Nothing"]
 var current_item:int = 0
 
-func _ready() -> void:
-	say("Please please please! let me watch \n One piece!!!")
 
 func take_input() -> void:
 	if (can_move == false):
@@ -62,8 +60,10 @@ func say(text: String, speed: float = 40, wait:float = 2):
 	$Text.visible = true
 	$Text.text = text
 	
-	if(text.length() < 15):
+	if(text.length() < 12):
 		$Text.add_theme_font_size_override("font_size", 20)
+	else:
+		$Text.add_theme_font_size_override("font_size", 12)
 	
 	for i in text.length() + 1:
 		$Text.visible_characters = i

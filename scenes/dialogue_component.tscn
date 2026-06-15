@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtde5ffj0cqfx"]
+
+[ext_resource type="Script" path="res://code_gd/dialogue_component.gd" id="1_wlmr5"]
+[ext_resource type="Texture2D" uid="uid://sp2vacibkcux" path="res://sprites/smth/buble.png" id="2_m5no2"]
+
+[node name="DialogueComponent" type="Node2D"]
+script = ExtResource("1_wlmr5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_m5no2")

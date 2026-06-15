@@ -54,7 +54,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"set1",
-"speed": 10.0
+"speed": 15.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -71,7 +71,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"set2",
-"speed": 10.0
+"speed": 15.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dru4l"]
@@ -83,9 +83,7 @@ script = ExtResource("1_aqdmm")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_amm0g")
-animation = &"set1"
-frame = 3
-frame_progress = 1.0
+animation = &"set2"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, -9)
