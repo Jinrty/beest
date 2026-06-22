@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://5ylw17cr1o8e"]
 
-[ext_resource type="Script" path="res://scenes/camera_2d.gd" id="1_1uaxh"]
+[ext_resource type="Script" path="res://code_gd/camera_2d.gd" id="1_1uaxh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wi4wu"]
 size = Vector2(20, 378)

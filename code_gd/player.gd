@@ -42,6 +42,12 @@ func hold_item(item):
 	$Holded_item.visible = true
 	$Holded_item.texture = item.sprite
 
+func item_name() -> String:
+	if(current_item == 0):
+		return ""
+	else:
+		return inventory[current_item].title
+
 func change_item():
 	if (inventory.is_empty()):
 		return
@@ -52,14 +58,14 @@ func change_item():
 	
 	if(current_item != 0):
 		hold_item(inventory[current_item])
+		ui_item_name(item_name())
 	else:
 		$Holded_item.visible = false
-
-func item_name() -> String:
-	if(current_item == 0):
-		return ""
-	else:
-		return inventory[current_item].title
+		
+func ui_item_name(item_title:String):
+	$UI/Item_name.start()
+	$"UI/Item title".text = item_title
+	
 	
 func say(text: String, speed: float = 40, wait:float = 2):
 	$Sprite2D.visible = true
@@ -153,3 +159,6 @@ func _on_jump_buffering_timeout() -> void:
 
 func _on_pause_in_jumps_timeout() -> void:
 	jump_pause = false
+
+func _on_item_name_timeout() -> void:
+	$"UI/Item title".text = ""
