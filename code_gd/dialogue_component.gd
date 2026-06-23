@@ -13,16 +13,26 @@ func on_interact() -> void:
 	lines_array = []
 	for x in lines:
 		if(path_chosen == false):
-			if((x.requirement == "") or (x.requirement == player.item_name())):
+			if(check_requirment(x.requirement, x.condition)):
 				current_path = x.path
 				path_chosen = true
-		if(current_path == x.path) and path_chosen:
+		if(current_path == x.path) and (path_chosen == true) and check_requirment(x.requirement, x.condition):
 			lines_array.append(x.line)
 	path_chosen = false
 	player.can_move = false
 	for i in lines_array:
 		await say(i)
 	player.can_move = true
+
+func check_requirment(req:String, cond:bool):
+	if(req == player.item_name()):
+		return true
+	if(req == ""):
+		return true
+	if(Flags.get(req) == cond):
+		return true
+	
+	return false
 
 func shut_up():
 	$Sprite2D.visible = false

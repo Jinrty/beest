@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://5ylw17cr1o8e"]
+[gd_scene load_steps=7 format=3 uid="uid://5ylw17cr1o8e"]
 
 [ext_resource type="Script" path="res://code_gd/camera_2d.gd" id="1_1uaxh"]
 
@@ -7,6 +7,12 @@ size = Vector2(20, 378)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_07b51"]
 size = Vector2(20, 379)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bdgl8"]
+size = Vector2(499, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oo4ax"]
+size = Vector2(624, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l33ng"]
 size = Vector2(720, 480)
@@ -26,6 +32,20 @@ shape = SubResource("RectangleShape2D_wi4wu")
 position = Vector2(200, 0.5)
 shape = SubResource("RectangleShape2D_07b51")
 
+[node name="Down" type="Area2D" parent="."]
+position = Vector2(0, 33)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Down"]
+position = Vector2(-0.5, 132)
+shape = SubResource("RectangleShape2D_bdgl8")
+
+[node name="Top" type="Area2D" parent="."]
+position = Vector2(0, 145)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Top"]
+position = Vector2(0, -140)
+shape = SubResource("RectangleShape2D_oo4ax")
+
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
@@ -35,5 +55,9 @@ shape = SubResource("RectangleShape2D_l33ng")
 [connection signal="body_exited" from="Left" to="." method="_on_left_body_exited"]
 [connection signal="body_entered" from="Right" to="." method="_on_right_body_entered"]
 [connection signal="body_exited" from="Right" to="." method="_on_right_body_exited"]
+[connection signal="body_entered" from="Down" to="." method="_on_down_body_entered"]
+[connection signal="body_exited" from="Down" to="." method="_on_down_body_exited"]
+[connection signal="body_entered" from="Top" to="." method="_on_top_body_entered"]
+[connection signal="body_exited" from="Top" to="." method="_on_top_body_exited"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

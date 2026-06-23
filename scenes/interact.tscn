@@ -4,7 +4,7 @@
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_hlyt5"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_qa0ss"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aclem"]
 size = Vector2(28, 27)
 
 [node name="Interact" type="Area2D"]
@@ -14,7 +14,7 @@ script = ExtResource("1_5jrgp")
 material = SubResource("ShaderMaterial_hlyt5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_qa0ss")
+shape = SubResource("RectangleShape2D_aclem")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]

@@ -1,9 +1,10 @@
-[gd_scene load_steps=15 format=3 uid="uid://dmdofi7dxaihn"]
+[gd_scene load_steps=17 format=3 uid="uid://dmdofi7dxaihn"]
 
 [ext_resource type="Script" path="res://code_gd/cushion.gd" id="1_aqdmm"]
 [ext_resource type="Texture2D" uid="uid://dlwk138s1m2rl" path="res://sprites/player room/cushion.png" id="1_mm5qi"]
 [ext_resource type="Texture2D" uid="uid://x2wd28b3cq1f" path="res://sprites/player room/cushion-Sheet.png" id="2_ktf25"]
 [ext_resource type="Texture2D" uid="uid://c0oiiphceutqv" path="res://sprites/player room/cushion2-Sheet.png" id="4_r1xmo"]
+[ext_resource type="Texture2D" uid="uid://jlmj4tdgpssk" path="res://sprites/rand room/sofa.png" id="5_c1fdy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ajur2"]
 atlas = ExtResource("2_ktf25")
@@ -36,6 +37,10 @@ region = Rect2(140, 0, 70, 48)
 [sub_resource type="AtlasTexture" id="AtlasTexture_skewm"]
 atlas = ExtResource("4_r1xmo")
 region = Rect2(0, 0, 70, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hmcj1"]
+atlas = ExtResource("5_c1fdy")
+region = Rect2(0, 0, 276, 184)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_amm0g"]
 animations = [{
@@ -72,11 +77,19 @@ animations = [{
 "loop": false,
 "name": &"set2",
 "speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hmcj1")
+}],
+"loop": true,
+"name": &"set3",
+"speed": 5.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dru4l"]
 radius = 5.99998
-height = 47.9998
+height = 46.0
 
 [node name="Cushion" type="Area2D"]
 script = ExtResource("1_aqdmm")

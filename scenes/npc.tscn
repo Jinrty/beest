@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://code_gd/npc.gd" id="1_nme44"]
 [ext_resource type="Texture2D" uid="uid://08ngsir06auv" path="res://sprites/npc/green kid.png" id="1_oyyxw"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_5is4n"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_68x3b"]
 size = Vector2(89, 88)
 
 [node name="NPC" type="Area2D"]
@@ -15,7 +15,7 @@ texture = ExtResource("1_oyyxw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.5, -2)
-shape = SubResource("RectangleShape2D_5is4n")
+shape = SubResource("RectangleShape2D_68x3b")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
