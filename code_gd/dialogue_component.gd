@@ -7,6 +7,7 @@ var current_path:int
 var player:Node2D
 var path_chosen:bool = false
 var lines_array:Array = []
+var item_give:Node2D
 
 func on_interact() -> void:
 	player = get_parent().player
@@ -18,11 +19,16 @@ func on_interact() -> void:
 				path_chosen = true
 		if(current_path == x.path) and (path_chosen == true) and check_requirment(x.requirement, x.condition):
 			lines_array.append(x.line)
+			Flags.set(x.variable, !Flags.get(x.variable))
+			if(x.item != null):
+				item_give = get_node(x.item)
 	path_chosen = false
 	player.can_move = false
 	for i in lines_array:
 		await say(i)
 	player.can_move = true
+	if(item_give != null):
+		player.add_item(item_give)
 
 func check_requirment(req:String, cond:bool):
 	if(req == player.item_name()):

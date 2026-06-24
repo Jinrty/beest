@@ -23,13 +23,13 @@ script = ExtResource("1_1uaxh")
 [node name="Left" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Left"]
-position = Vector2(-200, 0)
+position = Vector2(-140, 0)
 shape = SubResource("RectangleShape2D_wi4wu")
 
 [node name="Right" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Right"]
-position = Vector2(200, 0.5)
+position = Vector2(140, 0.5)
 shape = SubResource("RectangleShape2D_07b51")
 
 [node name="Down" type="Area2D" parent="."]
