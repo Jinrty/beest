@@ -1,10 +1,11 @@
-[gd_scene load_steps=17 format=3 uid="uid://dmdofi7dxaihn"]
+[gd_scene load_steps=21 format=3 uid="uid://dmdofi7dxaihn"]
 
 [ext_resource type="Script" path="res://code_gd/cushion.gd" id="1_aqdmm"]
 [ext_resource type="Texture2D" uid="uid://dlwk138s1m2rl" path="res://sprites/player room/cushion.png" id="1_mm5qi"]
 [ext_resource type="Texture2D" uid="uid://x2wd28b3cq1f" path="res://sprites/player room/cushion-Sheet.png" id="2_ktf25"]
 [ext_resource type="Texture2D" uid="uid://c0oiiphceutqv" path="res://sprites/player room/cushion2-Sheet.png" id="4_r1xmo"]
 [ext_resource type="Texture2D" uid="uid://jlmj4tdgpssk" path="res://sprites/rand room/sofa.png" id="5_c1fdy"]
+[ext_resource type="Texture2D" uid="uid://gi4o8y2xk73g" path="res://sprites/rand room/sofa-Sheet-export.png" id="6_a3o2x"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ajur2"]
 atlas = ExtResource("2_ktf25")
@@ -40,6 +41,18 @@ region = Rect2(0, 0, 70, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hmcj1"]
 atlas = ExtResource("5_c1fdy")
+region = Rect2(0, 0, 276, 184)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wk471"]
+atlas = ExtResource("6_a3o2x")
+region = Rect2(276, 0, 276, 184)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cn1vq"]
+atlas = ExtResource("6_a3o2x")
+region = Rect2(552, 0, 276, 184)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a5l0v"]
+atlas = ExtResource("6_a3o2x")
 region = Rect2(0, 0, 276, 184)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_amm0g"]
@@ -81,8 +94,17 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_hmcj1")
+}, {
+"duration": 0.22,
+"texture": SubResource("AtlasTexture_wk471")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cn1vq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a5l0v")
 }],
-"loop": true,
+"loop": false,
 "name": &"set3",
 "speed": 5.0
 }]
@@ -96,7 +118,7 @@ script = ExtResource("1_aqdmm")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_amm0g")
-animation = &"set1"
+animation = &"set3"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, -9)
