@@ -14,8 +14,10 @@ func send_signal() -> void:
 func _ready() -> void:
 	get_parent().set_editable_instance(self, true)
 	$CollisionShape2D.shape = $CollisionShape2D.shape.duplicate()
-	
+	$Area2D/CollisionShape2D.shape = $Area2D/CollisionShape2D.shape.duplicate()
 
-func _on_detect_player_body_entered(body: Node2D) -> void:
-	if(body.name == "Player"):
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	if(body.name == "Player") and (has_node("Levitating_component")):
 		send_signal()
+		print(body.velocity.y)
+		#get_tree().paused = true

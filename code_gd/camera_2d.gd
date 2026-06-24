@@ -80,7 +80,6 @@ func _on_top_body_entered(body: Node2D) -> void:
 		player = body
 		move_y = true
 		offset_y = global_position.y - body.global_position.y
-		print("s")
 
 
 func _on_top_body_exited(body: Node2D) -> void:
