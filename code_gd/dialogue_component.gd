@@ -29,6 +29,10 @@ func on_interact() -> void:
 	player.can_move = true
 	if(item_give != null):
 		player.add_item(item_give)
+	#That is adding hover shader but it shouldnt be here
+	var mat = ShaderMaterial.new()
+	mat.shader = load("res://shaders/itemOutline.gdshader")
+	get_parent().get_node("Sprite2D").material = mat
 
 func check_requirment(req:String, cond:bool):
 	if(req == player.item_name()):

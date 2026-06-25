@@ -12,6 +12,7 @@ func interact() -> void:
 	for i in get_children():
 		if i.has_method("on_interact"):
 			i.on_interact()
+			$Sprite2D.material = null
 
 
 func _ready() -> void:
@@ -21,14 +22,19 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if(inside == true and Input.is_action_just_pressed("interact")):
 		interact()
+	
 
 func _on_body_entered(body: Node2D) -> void:
 	if(body.name == "Player"):
 		inside = true
 		player = body
+		var mat = ShaderMaterial.new()
+		mat.shader = load("res://shaders/itemOutline.gdshader")
+		$Sprite2D.material = mat
 
 
 func _on_body_exited(body: Node2D) -> void:
 	if(body.name == "Player"):
 		inside = false
 		player = body
+		$Sprite2D.material = null
