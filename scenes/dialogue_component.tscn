@@ -10,10 +10,12 @@ script = ExtResource("1_wlmr5")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 visible = false
+z_index = 1
 texture = ExtResource("2_m5no2")
 
 [node name="Text" type="Label" parent="."]
 visible = false
+z_index = 1
 offset_left = -64.0
 offset_top = -34.0
 offset_right = 60.0
