@@ -2,15 +2,12 @@
 
 [ext_resource type="Script" path="res://code_gd/door.gd" id="2_idcyn"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_gts6s"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_svl1r"]
 
 [node name="Door" type="Area2D"]
 position = Vector2(-1, -1)
 scale = Vector2(0.460938, 0.460938)
 script = ExtResource("2_idcyn")
-requires_item_use = null
-requires_item_npc = null
-refuse_line = null
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(6.46519e-08, -6.46519e-08)
@@ -18,7 +15,7 @@ scale = Vector2(2.16673, 2.16673)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1.08475, -2.14577e-06)
-shape = SubResource("RectangleShape2D_gts6s")
+shape = SubResource("RectangleShape2D_svl1r")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]

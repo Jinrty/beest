@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" path="res://code_gd/solid_decoration.gd" id="1_ga6oc"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_nuqpm"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_435qn"]
 size = Vector2(68.375, 148.188)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_iafbc"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_3ueqe"]
 
 [node name="Solid Decoration" type="StaticBody2D"]
 script = ExtResource("1_ga6oc")
@@ -13,11 +13,11 @@ script = ExtResource("1_ga6oc")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_nuqpm")
+shape = SubResource("RectangleShape2D_435qn")
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-shape = SubResource("CircleShape2D_iafbc")
+shape = SubResource("CircleShape2D_3ueqe")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
