@@ -20,4 +20,3 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 	if(body.name == "Player") and (has_node("Levitating_component")):
 		send_signal()
 		print(body.velocity.y)
-		#get_tree().paused = true

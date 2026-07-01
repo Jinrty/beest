@@ -85,3 +85,21 @@ func _on_top_body_entered(body: Node2D) -> void:
 func _on_top_body_exited(body: Node2D) -> void:
 	if(body.name == "Player") and type == Type.Movable_y:
 		move_y = false
+
+
+func _on_wewe_body_entered(body: Node2D) -> void:
+	if body.name == "Player":
+		var vert = get_parent().get_node_or_null("VerticalCamera")
+		if vert != null:
+			vert.make_current()
+			vert.global_position.x = body.global_position.x
+
+
+func _on_pierd_body_entered(body: Node2D) -> void:
+	if body.name == "Player":
+		print("Help")
+		var vert = get_node_or_null("../../Rand_room/Camera2D")
+		if vert != null:
+			vert.make_current()
+			vert.global_position.y = body.global_position.y - 50
+			print("HUH")
