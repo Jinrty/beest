@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bkuarltowua8l"
-path="res://.godot/imported/yellowsquare.png-780c08c2fea78a8f1fd576b71e2b95f7.ctex"
+path="res://.godot/imported/yellowsquare.png-3841209f99a62d03b0b5c8acb28e0751.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/gentleman club/yellowsquare.png"
-dest_files=["res://.godot/imported/yellowsquare.png-780c08c2fea78a8f1fd576b71e2b95f7.ctex"]
+source_file="res://sprites/npc/yellowsquare.png"
+dest_files=["res://.godot/imported/yellowsquare.png-3841209f99a62d03b0b5c8acb28e0751.ctex"]
 
 [params]
 

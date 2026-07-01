@@ -1,4 +1,4 @@
-[gd_scene load_steps=165 format=3 uid="uid://4tt01l71fff2"]
+[gd_scene load_steps=193 format=3 uid="uid://4tt01l71fff2"]
 
 [ext_resource type="PackedScene" uid="uid://5ylw17cr1o8e" path="res://scenes/camera_2d.tscn" id="1_agmlv"]
 [ext_resource type="Texture2D" uid="uid://doldxrpmy7b6b" path="res://sprites/player room/background.png" id="2_an6my"]
@@ -69,8 +69,21 @@
 [ext_resource type="Texture2D" uid="uid://ca0qbcrvxjafm" path="res://sprites/corridor3/door.png" id="60_sls22"]
 [ext_resource type="Texture2D" uid="uid://djf3k412col42" path="res://sprites/corridor3/clock.png" id="63_8c4cn"]
 [ext_resource type="Texture2D" uid="uid://cx77ry2bh6mij" path="res://sprites/gentleman club/back.png" id="63_domtw"]
+[ext_resource type="Texture2D" uid="uid://c70hv0ak6egla" path="res://sprites/gentleman club/gentleman clyb.png" id="64_dkno6"]
+[ext_resource type="Texture2D" uid="uid://b1roj36fw10qq" path="res://sprites/gentleman club/door.png" id="65_87xu7"]
+[ext_resource type="Texture2D" uid="uid://b3kicsy745u2c" path="res://sprites/gentleman club/kitte.png" id="65_i6yxb"]
+[ext_resource type="Texture2D" uid="uid://cyxvygtv36ksp" path="res://sprites/gentleman club/calendar.png" id="66_16xb6"]
 [ext_resource type="Texture2D" uid="uid://c3xjk788aav26" path="res://sprites/npc/puprle circle.png" id="67_528u3"]
+[ext_resource type="Texture2D" uid="uid://daf5pw2iwsxdo" path="res://sprites/gentleman club/crypto.png" id="67_vksp8"]
+[ext_resource type="Texture2D" uid="uid://cek2hn45qnqxp" path="res://sprites/gentleman club/microphone.png" id="68_vfmw4"]
 [ext_resource type="PackedScene" uid="uid://ccfaq1tv76ex6" path="res://scenes/pipe.tscn" id="69_bo3pm"]
+[ext_resource type="Texture2D" uid="uid://yq3wi2eo77vw" path="res://sprites/gentleman club/waterbootle.png" id="69_t2d14"]
+[ext_resource type="Texture2D" uid="uid://cnbldreu02dyi" path="res://sprites/gentleman club/bag.png" id="70_c6ouj"]
+[ext_resource type="Texture2D" uid="uid://b0ruerctpnsdj" path="res://sprites/gentleman club/stage.png" id="71_3yrgs"]
+[ext_resource type="Texture2D" uid="uid://dyaf71ki5n5um" path="res://sprites/npc/redbean.png" id="73_5w3ra"]
+[ext_resource type="Texture2D" uid="uid://bkuarltowua8l" path="res://sprites/npc/yellowsquare.png" id="74_epnh5"]
+[ext_resource type="Texture2D" uid="uid://c1wce6fxtvyc7" path="res://sprites/gentleman club/balcony.png" id="74_porr6"]
+[ext_resource type="Texture2D" uid="uid://dibpabvti0iuu" path="res://sprites/npc/whiteX.png" id="75_w301q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n8l4m"]
 size = Vector2(3463, 461)
@@ -78,31 +91,31 @@ size = Vector2(3463, 461)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8gcft"]
 size = Vector2(848, 858)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_uq0qo"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_123k0"]
 size = Vector2(79, 135)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_fciy7"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_47ofi"]
 size = Vector2(94, 19)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_k8i2q"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5yuij"]
 size = Vector2(35, 11)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_wptuc"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5xi8k"]
 size = Vector2(94, 19)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qr3co"]
 size = Vector2(20, 10)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_odqje"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rw006"]
 size = Vector2(44, 67)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_uqmo8"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_057xp"]
 size = Vector2(94, 19)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_2gwst"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pgwse"]
 size = Vector2(48, 85)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ronyb"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gitl8"]
 size = Vector2(169.221, 234.305)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ropw1"]
@@ -117,46 +130,46 @@ size = Vector2(510, 20)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eg3hh"]
 size = Vector2(14.5, 337)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_c1xmf"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_626v3"]
 size = Vector2(79, 48)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_hw765"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gphik"]
 size = Vector2(94, 19)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n2j7s"]
 size = Vector2(84, 12)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_e2n5y"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_26jk8"]
 size = Vector2(91, 16)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_2bnjo"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_scqj8"]
 size = Vector2(94, 19)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4c2cf"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_chgk2"]
 size = Vector2(101, 19)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vo1f"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_furud"]
 size = Vector2(101, 19)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_a5r3c"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_go55y"]
 size = Vector2(40, 93)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_scn0o"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0yio3"]
 size = Vector2(94, 19)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6oroe"]
 size = Vector2(34, 92)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_eda3n"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_43gae"]
 size = Vector2(260.339, 284.203)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e6fry"]
 size = Vector2(115, 20)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_kab45"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pjjw3"]
 size = Vector2(20, 53)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ulk8l"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6xkaq"]
 size = Vector2(74, 45)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xukn8"]
@@ -174,7 +187,7 @@ size = Vector2(32, 725)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i4egx"]
 size = Vector2(659, 51)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6put3"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s044y"]
 size = Vector2(175, 88)
 
 [sub_resource type="Resource" id="Resource_6hvn1"]
@@ -222,31 +235,31 @@ condition = true
 item = NodePath("")
 variable = ""
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_qv42w"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m1ily"]
 size = Vector2(61.1875, 74)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_htu68"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nq1ca"]
 size = Vector2(94, 19)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_s6qrn"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ttg42"]
 size = Vector2(171, 40)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_le3bu"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2grju"]
 size = Vector2(94, 19)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3emmn"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4v5de"]
 size = Vector2(42, 39)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_voqqi"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mxg1u"]
 size = Vector2(94, 19)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_2v1ma"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v7xyw"]
 size = Vector2(219.118, 273.356)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ky2c4"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1t314"]
 size = Vector2(49, 20)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_of087"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yomcs"]
 size = Vector2(43, 40)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tlhgs"]
@@ -270,31 +283,34 @@ size = Vector2(720, 20)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_es202"]
 size = Vector2(720.5, 20)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_voa3h"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ubgil"]
 size = Vector2(55, 64)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8c0io"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kregk"]
 size = Vector2(94, 19)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2exe6"]
 size = Vector2(75, 16)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_seoub"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dj0p1"]
 size = Vector2(55, 75)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_arha0"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ku5pk"]
 size = Vector2(94, 19)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_epu1w"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0nq87"]
 size = Vector2(124, 154)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3f3p6"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6iqge"]
 size = Vector2(94, 19)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xbjjw"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ne3xv"]
 size = Vector2(249.491, 236.474)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_cg50v"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8dn8t"]
+size = Vector2(70, 125)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ch1kg"]
 size = Vector2(117, 88)
 
 [sub_resource type="Resource" id="Resource_e2w6q"]
@@ -330,15 +346,21 @@ size = Vector2(722, 20)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yicjp"]
 size = Vector2(722, 20)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_vcf7u"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lhx63"]
+size = Vector2(170, 51.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1fwi2"]
+size = Vector2(66, 124)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dty1s"]
 radius = 28.0
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_funbo"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_fvnmj"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_bq8jb"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gyqaa"]
 size = Vector2(61.1875, 174)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_1mkl5"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_srlq4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kgvbn"]
 size = Vector2(87, 20)
@@ -352,13 +374,13 @@ size = Vector2(108, 49)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1hnh2"]
 size = Vector2(27, 36)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_x8wws"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4t3b3"]
 size = Vector2(30, 92)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_h1o6r"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_bavc3"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_43sho"]
-size = Vector2(120, 111)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3gnrx"]
+size = Vector2(102, 111)
 
 [sub_resource type="Resource" id="Resource_qxvgh"]
 script = ExtResource("38_uqjk0")
@@ -369,7 +391,7 @@ condition = true
 item = NodePath("")
 variable = ""
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ap5w"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lqx2k"]
 size = Vector2(297.22, 253.83)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2wbcu"]
@@ -384,27 +406,86 @@ size = Vector2(20, 372)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qksvt"]
 size = Vector2(612, 20)
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_18coh"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lnalx"]
+size = Vector2(255, 88)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ep722"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ug8dq"]
+size = Vector2(35, 47.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nghkh"]
+size = Vector2(262.508, 275.525)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_051dr"]
+size = Vector2(68, 96)
+
+[sub_resource type="Resource" id="Resource_ptxiy"]
+script = ExtResource("38_uqjk0")
+line = "TEST"
+path = 0
+requirement = ""
+condition = true
+item = NodePath("")
+variable = ""
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ii5jo"]
+size = Vector2(89, 67)
+
+[sub_resource type="Resource" id="Resource_7uxwy"]
+script = ExtResource("38_uqjk0")
+line = "*Evil laugh*"
+path = 0
+requirement = ""
+condition = true
+item = NodePath("")
+variable = ""
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5oyb3"]
+size = Vector2(53, 92)
+
+[sub_resource type="Resource" id="Resource_oly6c"]
+script = ExtResource("38_uqjk0")
+line = "Oh how I HATE... weather"
+path = 0
+requirement = ""
+condition = true
+item = NodePath("")
+variable = ""
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ko68w"]
+size = Vector2(74.5, 88)
+
+[sub_resource type="Resource" id="Resource_guqf6"]
+script = ExtResource("38_uqjk0")
+line = "Jumper"
+path = 0
+requirement = ""
+condition = true
+item = NodePath("")
+variable = ""
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xboa5"]
 radius = 43.0
 height = 86.0
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cqr6h"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rupm7"]
 radius = 43.0
 height = 86.0
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_u6x3a"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xsr1j"]
 radius = 43.0
 height = 86.0
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mhik8"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2nhni"]
 radius = 31.0
 height = 62.0
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sojvo"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_a5f8j"]
 radius = 43.0
 height = 86.0
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tcrcd"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0744u"]
 radius = 43.0
 height = 86.0
 
@@ -501,10 +582,10 @@ texture = ExtResource("8_rc1hc")
 
 [node name="CollisionShape2D" parent="Player_room/Solid Decorations/Shelf" index="1"]
 position = Vector2(0.5, -0.5)
-shape = SubResource("RectangleShape2D_uq0qo")
+shape = SubResource("RectangleShape2D_123k0")
 
 [node name="CollisionShape2D" parent="Player_room/Solid Decorations/Shelf/Area2D" index="0"]
-shape = SubResource("RectangleShape2D_fciy7")
+shape = SubResource("RectangleShape2D_47ofi")
 
 [node name="Step 1" parent="Player_room/Solid Decorations" instance=ExtResource("7_eg0pw")]
 position = Vector2(360, 198)
@@ -515,10 +596,10 @@ texture = ExtResource("9_l84ny")
 
 [node name="CollisionShape2D" parent="Player_room/Solid Decorations/Step 1" index="1"]
 position = Vector2(-2.5, 17.5)
-shape = SubResource("RectangleShape2D_k8i2q")
+shape = SubResource("RectangleShape2D_5yuij")
 
 [node name="CollisionShape2D" parent="Player_room/Solid Decorations/Step 1/Area2D" index="0"]
-shape = SubResource("RectangleShape2D_wptuc")
+shape = SubResource("RectangleShape2D_5xi8k")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Player_room/Solid Decorations/Step 1"]
 position = Vector2(8, -17)
@@ -533,10 +614,10 @@ texture = ExtResource("10_ckk2b")
 
 [node name="CollisionShape2D" parent="Player_room/Solid Decorations/Lamp2" index="1"]
 position = Vector2(-3, 3.5)
-shape = SubResource("RectangleShape2D_odqje")
+shape = SubResource("RectangleShape2D_rw006")
 
 [node name="CollisionShape2D" parent="Player_room/Solid Decorations/Lamp2/Area2D" index="0"]
-shape = SubResource("RectangleShape2D_uqmo8")
+shape = SubResource("RectangleShape2D_057xp")
 
 [node name="Interactables" type="Node2D" parent="Player_room"]
 position = Vector2(-3, 0)
@@ -550,7 +631,7 @@ texture = ExtResource("6_oqhxd")
 
 [node name="CollisionShape2D" parent="Player_room/Interactables/Cactus" index="1"]
 position = Vector2(-1, 1.5)
-shape = SubResource("RectangleShape2D_2gwst")
+shape = SubResource("RectangleShape2D_pgwse")
 
 [node name="Funky" type="Node2D" parent="Player_room"]
 
@@ -579,7 +660,7 @@ texture = ExtResource("13_risct")
 
 [node name="CollisionShape2D" parent="Player_room/Funky/Door player inside" index="1"]
 position = Vector2(2.17041, 19.5255)
-shape = SubResource("RectangleShape2D_ronyb")
+shape = SubResource("RectangleShape2D_gitl8")
 
 [node name="Walls" type="StaticBody2D" parent="Player_room"]
 
@@ -659,10 +740,10 @@ texture = ExtResource("22_dqkld")
 
 [node name="CollisionShape2D" parent="Rand_room/Static decorations/Guitar" index="1"]
 position = Vector2(-30.5, -1)
-shape = SubResource("RectangleShape2D_c1xmf")
+shape = SubResource("RectangleShape2D_626v3")
 
 [node name="CollisionShape2D" parent="Rand_room/Static decorations/Guitar/Area2D" index="0"]
-shape = SubResource("RectangleShape2D_hw765")
+shape = SubResource("RectangleShape2D_gphik")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Rand_room/Static decorations/Guitar"]
 position = Vector2(32, 0)
@@ -677,14 +758,14 @@ texture = ExtResource("24_r0cmj")
 
 [node name="CollisionShape2D" parent="Rand_room/Static decorations/Bone" index="1"]
 position = Vector2(2.5, -1)
-shape = SubResource("RectangleShape2D_e2n5y")
+shape = SubResource("RectangleShape2D_26jk8")
 
 [node name="Area2D" parent="Rand_room/Static decorations/Bone" index="2"]
 position = Vector2(0, -21)
 
 [node name="CollisionShape2D" parent="Rand_room/Static decorations/Bone/Area2D" index="0"]
 position = Vector2(3, 9)
-shape = SubResource("RectangleShape2D_2bnjo")
+shape = SubResource("RectangleShape2D_scqj8")
 
 [node name="Levitating_component" parent="Rand_room/Static decorations/Bone" instance=ExtResource("23_ekew2")]
 position = Vector2(56, 27)
@@ -699,14 +780,14 @@ texture = ExtResource("25_kb12g")
 
 [node name="CollisionShape2D" parent="Rand_room/Static decorations/Bones 2" index="1"]
 position = Vector2(-4.5, -41.5)
-shape = SubResource("RectangleShape2D_4c2cf")
+shape = SubResource("RectangleShape2D_chgk2")
 
 [node name="Area2D" parent="Rand_room/Static decorations/Bones 2" index="2"]
 position = Vector2(-7, -42)
 
 [node name="CollisionShape2D" parent="Rand_room/Static decorations/Bones 2/Area2D" index="0"]
 position = Vector2(2, -8)
-shape = SubResource("RectangleShape2D_1vo1f")
+shape = SubResource("RectangleShape2D_furud")
 
 [node name="Levitating_component" parent="Rand_room/Static decorations/Bones 2" instance=ExtResource("23_ekew2")]
 
@@ -720,10 +801,10 @@ texture = ExtResource("54_ocqrr")
 
 [node name="CollisionShape2D" parent="Rand_room/Static decorations/Sofa" index="1"]
 position = Vector2(80, 4.5)
-shape = SubResource("RectangleShape2D_a5r3c")
+shape = SubResource("RectangleShape2D_go55y")
 
 [node name="CollisionShape2D" parent="Rand_room/Static decorations/Sofa/Area2D" index="0"]
-shape = SubResource("RectangleShape2D_scn0o")
+shape = SubResource("RectangleShape2D_0yio3")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Rand_room/Static decorations/Sofa"]
 position = Vector2(-84, 10)
@@ -741,7 +822,7 @@ texture = ExtResource("21_fq0rv")
 
 [node name="CollisionShape2D" parent="Rand_room/Funky/Random room inside" index="1"]
 position = Vector2(-8.67795, 35.7966)
-shape = SubResource("RectangleShape2D_eda3n")
+shape = SubResource("RectangleShape2D_43gae")
 
 [node name="Sofa" parent="Rand_room/Funky" instance=ExtResource("11_m3837")]
 position = Vector2(-161, 250)
@@ -760,14 +841,14 @@ texture = ExtResource("22_uhobh")
 
 [node name="CollisionShape2D" parent="Rand_room/Funky/Pipe_rand/Area2D" index="0"]
 position = Vector2(-38, -3.5)
-shape = SubResource("RectangleShape2D_kab45")
+shape = SubResource("RectangleShape2D_pjjw3")
 
 [node name="Exit" parent="Rand_room/Funky/Pipe_rand" index="2"]
 position = Vector2(-80, -2)
 
 [node name="CollisionShape2D" parent="Rand_room/Funky/Pipe_rand/StaticBody2D" index="0"]
 position = Vector2(7, 0.5)
-shape = SubResource("RectangleShape2D_ulk8l")
+shape = SubResource("RectangleShape2D_6xkaq")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Rand_room/Funky/Pipe_rand/StaticBody2D" index="1"]
 position = Vector2(-25, -1.5)
@@ -799,7 +880,7 @@ texture = ExtResource("27_djnge")
 
 [node name="CollisionShape2D" parent="Rand_room/Blue romb" index="1"]
 position = Vector2(-2.5, 69)
-shape = SubResource("RectangleShape2D_6put3")
+shape = SubResource("RectangleShape2D_s044y")
 
 [node name="DialogueComponent" parent="Rand_room/Blue romb" instance=ExtResource("38_jtg42")]
 position = Vector2(-2, -17)
@@ -878,10 +959,10 @@ texture = ExtResource("19_svxmo")
 
 [node name="CollisionShape2D" parent="Corridor_end/Solid Decorations/Box" index="1"]
 position = Vector2(-3.59375, -2)
-shape = SubResource("RectangleShape2D_qv42w")
+shape = SubResource("RectangleShape2D_m1ily")
 
 [node name="CollisionShape2D" parent="Corridor_end/Solid Decorations/Box/Area2D" index="0"]
-shape = SubResource("RectangleShape2D_htu68")
+shape = SubResource("RectangleShape2D_nq1ca")
 
 [node name="metal shelf" parent="Corridor_end/Solid Decorations" instance=ExtResource("7_eg0pw")]
 position = Vector2(1712, -947)
@@ -892,10 +973,10 @@ texture = ExtResource("20_q0f14")
 
 [node name="CollisionShape2D" parent="Corridor_end/Solid Decorations/metal shelf" index="1"]
 position = Vector2(-3.5, -2)
-shape = SubResource("RectangleShape2D_s6qrn")
+shape = SubResource("RectangleShape2D_ttg42")
 
 [node name="CollisionShape2D" parent="Corridor_end/Solid Decorations/metal shelf/Area2D" index="0"]
-shape = SubResource("RectangleShape2D_le3bu")
+shape = SubResource("RectangleShape2D_2grju")
 
 [node name="Lamp" parent="Corridor_end/Solid Decorations" instance=ExtResource("7_eg0pw")]
 position = Vector2(1761, -783)
@@ -906,10 +987,10 @@ texture = ExtResource("21_fxswb")
 
 [node name="CollisionShape2D" parent="Corridor_end/Solid Decorations/Lamp" index="1"]
 position = Vector2(1, -50.5)
-shape = SubResource("RectangleShape2D_3emmn")
+shape = SubResource("RectangleShape2D_4v5de")
 
 [node name="CollisionShape2D" parent="Corridor_end/Solid Decorations/Lamp/Area2D" index="0"]
-shape = SubResource("RectangleShape2D_voqqi")
+shape = SubResource("RectangleShape2D_mxg1u")
 
 [node name="Items" type="Node2D" parent="Corridor_end"]
 
@@ -925,7 +1006,7 @@ texture = ExtResource("25_rx7u8")
 
 [node name="CollisionShape2D" parent="Corridor_end/Funky/Door player coridor" index="1"]
 position = Vector2(1.08472, 30.3728)
-shape = SubResource("RectangleShape2D_2v1ma")
+shape = SubResource("RectangleShape2D_v7xyw")
 
 [node name="Pipe_cor" parent="Corridor_end/Funky" node_paths=PackedStringArray("where") instance=ExtResource("69_bo3pm")]
 position = Vector2(1659, -1059)
@@ -936,14 +1017,14 @@ texture = ExtResource("22_f4u3r")
 
 [node name="CollisionShape2D" parent="Corridor_end/Funky/Pipe_cor/Area2D" index="0"]
 position = Vector2(0.5, 21)
-shape = SubResource("RectangleShape2D_ky2c4")
+shape = SubResource("RectangleShape2D_1t314")
 
 [node name="Exit" parent="Corridor_end/Funky/Pipe_cor" index="2"]
 position = Vector2(0, 57)
 
 [node name="CollisionShape2D" parent="Corridor_end/Funky/Pipe_cor/StaticBody2D" index="0"]
 position = Vector2(0.5, -10)
-shape = SubResource("RectangleShape2D_of087")
+shape = SubResource("RectangleShape2D_yomcs")
 
 [node name="Walls" type="StaticBody2D" parent="Corridor_end"]
 position = Vector2(1127, -693)
@@ -1009,10 +1090,10 @@ texture = ExtResource("30_love8")
 
 [node name="CollisionShape2D" parent="Corridor_rand/Solid Decorations/Flower Pot" index="1"]
 position = Vector2(-1.5, 0)
-shape = SubResource("RectangleShape2D_voa3h")
+shape = SubResource("RectangleShape2D_ubgil")
 
 [node name="CollisionShape2D" parent="Corridor_rand/Solid Decorations/Flower Pot/Area2D" index="0"]
-shape = SubResource("RectangleShape2D_8c0io")
+shape = SubResource("RectangleShape2D_kregk")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Corridor_rand/Solid Decorations/Flower Pot"]
 position = Vector2(-1.5, -24)
@@ -1027,10 +1108,10 @@ texture = ExtResource("31_kk63t")
 
 [node name="CollisionShape2D" parent="Corridor_rand/Solid Decorations/Speaker" index="1"]
 position = Vector2(-29.5, 34.5)
-shape = SubResource("RectangleShape2D_seoub")
+shape = SubResource("RectangleShape2D_dj0p1")
 
 [node name="CollisionShape2D" parent="Corridor_rand/Solid Decorations/Speaker/Area2D" index="0"]
-shape = SubResource("RectangleShape2D_arha0")
+shape = SubResource("RectangleShape2D_ku5pk")
 
 [node name="Vending Machine" parent="Corridor_rand/Solid Decorations" instance=ExtResource("7_eg0pw")]
 position = Vector2(-239, 75)
@@ -1041,10 +1122,10 @@ texture = ExtResource("34_gyr5x")
 
 [node name="CollisionShape2D" parent="Corridor_rand/Solid Decorations/Vending Machine" index="1"]
 position = Vector2(3, 0)
-shape = SubResource("RectangleShape2D_epu1w")
+shape = SubResource("RectangleShape2D_0nq87")
 
 [node name="CollisionShape2D" parent="Corridor_rand/Solid Decorations/Vending Machine/Area2D" index="0"]
-shape = SubResource("RectangleShape2D_3f3p6")
+shape = SubResource("RectangleShape2D_6iqge")
 
 [node name="Funky" type="Node2D" parent="Corridor_rand"]
 
@@ -1059,14 +1140,27 @@ texture = ExtResource("33_5sd32")
 
 [node name="CollisionShape2D" parent="Corridor_rand/Funky/Crazy room inside" index="1"]
 position = Vector2(3.25421, 68.3389)
-shape = SubResource("RectangleShape2D_xbjjw")
+shape = SubResource("RectangleShape2D_ne3xv")
+
+[node name="Interactables" type="Node2D" parent="Corridor_rand"]
+
+[node name="Vending Machine" parent="Corridor_rand/Interactables" instance=ExtResource("27_ogvw7")]
+position = Vector2(-239, 75)
+answer = "I am too broke to buy anything!"
+
+[node name="Sprite2D" parent="Corridor_rand/Interactables/Vending Machine" index="0"]
+texture = ExtResource("34_gyr5x")
+
+[node name="CollisionShape2D" parent="Corridor_rand/Interactables/Vending Machine" index="1"]
+position = Vector2(-53, 9.5)
+shape = SubResource("RectangleShape2D_8dn8t")
 
 [node name="Green kid" parent="Corridor_rand" instance=ExtResource("36_shsjf")]
 position = Vector2(203, 108)
 
 [node name="CollisionShape2D" parent="Corridor_rand/Green kid" index="1"]
 position = Vector2(0.5, -2)
-shape = SubResource("RectangleShape2D_cg50v")
+shape = SubResource("RectangleShape2D_ch1kg")
 
 [node name="DialogueComponent" parent="Corridor_rand/Green kid" instance=ExtResource("38_jtg42")]
 lines = Array[ExtResource("38_uqjk0")]([SubResource("Resource_e2w6q"), SubResource("Resource_jwtci"), SubResource("Resource_enrfo")])
@@ -1086,6 +1180,7 @@ position = Vector2(-321, 1232)
 texture = ExtResource("50_fg3dt")
 
 [node name="Preview" type="Sprite2D" parent="Corridor_gentleman"]
+visible = false
 modulate = Color(1, 1, 1, 0.568627)
 position = Vector2(-321, 1232)
 texture = ExtResource("51_vk7dt")
@@ -1100,6 +1195,30 @@ shape = SubResource("RectangleShape2D_vhbil")
 position = Vector2(-322, 1003)
 shape = SubResource("RectangleShape2D_yicjp")
 
+[node name="Interactables" type="Node2D" parent="Corridor_gentleman"]
+
+[node name="Statue" parent="Corridor_gentleman/Interactables" instance=ExtResource("27_ogvw7")]
+position = Vector2(-94, 1277)
+answer = "I want to let Jinrty go to the beest..."
+
+[node name="Sprite2D" parent="Corridor_gentleman/Interactables/Statue" index="0"]
+texture = ExtResource("57_236kf")
+
+[node name="CollisionShape2D" parent="Corridor_gentleman/Interactables/Statue" index="1"]
+position = Vector2(-35, 80.25)
+shape = SubResource("RectangleShape2D_lhx63")
+
+[node name="Clock" parent="Corridor_gentleman/Interactables" instance=ExtResource("27_ogvw7")]
+position = Vector2(-9, 1133)
+answer = "Seems to be broken..."
+
+[node name="Sprite2D" parent="Corridor_gentleman/Interactables/Clock" index="0"]
+texture = ExtResource("63_8c4cn")
+
+[node name="CollisionShape2D" parent="Corridor_gentleman/Interactables/Clock" index="1"]
+position = Vector2(-2, -5)
+shape = SubResource("RectangleShape2D_1fwi2")
+
 [node name="Decorations" type="Node2D" parent="Corridor_gentleman"]
 
 [node name="Shelfs" type="Sprite2D" parent="Corridor_gentleman/Decorations"]
@@ -1113,10 +1232,6 @@ texture = ExtResource("53_hlreb")
 [node name="Sign" type="Sprite2D" parent="Corridor_gentleman/Decorations"]
 position = Vector2(-344, 1150)
 texture = ExtResource("54_k0x54")
-
-[node name="Clock" type="Sprite2D" parent="Corridor_gentleman/Decorations"]
-position = Vector2(-9, 1133)
-texture = ExtResource("63_8c4cn")
 
 [node name="Plant" type="Sprite2D" parent="Corridor_gentleman/Decorations"]
 position = Vector2(-94, 1277)
@@ -1133,10 +1248,10 @@ texture = ExtResource("56_w30nm")
 
 [node name="CollisionShape2D" parent="Corridor_gentleman/Solid Decorations/Globus" index="1"]
 position = Vector2(12, -45)
-shape = SubResource("CircleShape2D_vcf7u")
+shape = SubResource("CircleShape2D_dty1s")
 
 [node name="CollisionShape2D" parent="Corridor_gentleman/Solid Decorations/Globus/Area2D" index="0"]
-shape = SubResource("CircleShape2D_funbo")
+shape = SubResource("CircleShape2D_fvnmj")
 
 [node name="Statue" parent="Corridor_gentleman/Solid Decorations" instance=ExtResource("7_eg0pw")]
 z_index = -1
@@ -1148,10 +1263,10 @@ texture = ExtResource("57_236kf")
 
 [node name="CollisionShape2D" parent="Corridor_gentleman/Solid Decorations/Statue" index="1"]
 position = Vector2(-42.5938, -27)
-shape = SubResource("RectangleShape2D_bq8jb")
+shape = SubResource("RectangleShape2D_gyqaa")
 
 [node name="CollisionShape2D" parent="Corridor_gentleman/Solid Decorations/Statue/Area2D" index="0"]
-shape = SubResource("CircleShape2D_1mkl5")
+shape = SubResource("CircleShape2D_srlq4")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Corridor_gentleman/Solid Decorations/Statue"]
 position = Vector2(79, 27)
@@ -1179,22 +1294,22 @@ texture = ExtResource("60_pyr4f")
 
 [node name="CollisionShape2D" parent="Corridor_gentleman/Solid Decorations/Hand" index="1"]
 position = Vector2(-2, 0)
-shape = SubResource("RectangleShape2D_x8wws")
+shape = SubResource("RectangleShape2D_4t3b3")
 
 [node name="CollisionShape2D" parent="Corridor_gentleman/Solid Decorations/Hand/Area2D" index="0"]
-shape = SubResource("CircleShape2D_h1o6r")
+shape = SubResource("CircleShape2D_bavc3")
 
 [node name="Funky" type="Node2D" parent="Corridor_gentleman"]
 
 [node name="Purple circle" parent="Corridor_gentleman" instance=ExtResource("36_shsjf")]
-position = Vector2(-447, 1339)
+position = Vector2(-461, 1338)
 
 [node name="Sprite2D" parent="Corridor_gentleman/Purple circle" index="0"]
 texture = ExtResource("67_528u3")
 
 [node name="CollisionShape2D" parent="Corridor_gentleman/Purple circle" index="1"]
-position = Vector2(-29, -13.5)
-shape = SubResource("RectangleShape2D_43sho")
+position = Vector2(-38, -13.5)
+shape = SubResource("RectangleShape2D_3gnrx")
 
 [node name="DialogueComponent" parent="Corridor_gentleman/Purple circle" instance=ExtResource("38_jtg42")]
 position = Vector2(-16, -130)
@@ -1202,7 +1317,7 @@ lines = Array[ExtResource("38_uqjk0")]([SubResource("Resource_qxvgh")])
 
 [node name="Door to gentleman club" parent="Corridor_gentleman" node_paths=PackedStringArray("where", "npc_gate") instance=ExtResource("12_lhcv3")]
 position = Vector2(-336, 1297)
-where = NodePath("../../Player_room/Funky/Door player inside")
+where = NodePath("../../Gentleman_club/Funky/Door to gentle corridort")
 requires_item_npc = true
 npc_gate = NodePath("../Purple circle")
 refuse_line = "We don't allow peasants!"
@@ -1213,7 +1328,7 @@ texture = ExtResource("60_sls22")
 
 [node name="CollisionShape2D" parent="Corridor_gentleman/Door to gentleman club" index="1"]
 position = Vector2(-16.2711, 55.322)
-shape = SubResource("RectangleShape2D_8ap5w")
+shape = SubResource("RectangleShape2D_lqx2k")
 
 [node name="Gentleman_club" type="Node2D" parent="."]
 position = Vector2(-1295, 184)
@@ -1255,6 +1370,12 @@ color = Color(0.14902, 0.360784, 0.258824, 1)
 position = Vector2(1, -1)
 texture = ExtResource("63_domtw")
 
+[node name="Preview" type="Sprite2D" parent="Gentleman_club"]
+visible = false
+modulate = Color(1, 1, 1, 0.52549)
+position = Vector2(1, -1)
+texture = ExtResource("64_dkno6")
+
 [node name="Walls" type="StaticBody2D" parent="Gentleman_club"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Gentleman_club/Walls"]
@@ -1273,8 +1394,125 @@ shape = SubResource("RectangleShape2D_eq85d")
 position = Vector2(2, -197)
 shape = SubResource("RectangleShape2D_qksvt")
 
+[node name="Decorations" type="Node2D" parent="Gentleman_club"]
+
+[node name="Kitte" type="Sprite2D" parent="Gentleman_club/Decorations"]
+position = Vector2(204, -111)
+texture = ExtResource("65_i6yxb")
+
+[node name="Calendar" type="Sprite2D" parent="Gentleman_club/Decorations"]
+position = Vector2(46, -7)
+texture = ExtResource("66_16xb6")
+
+[node name="Crypto" type="Sprite2D" parent="Gentleman_club/Decorations"]
+position = Vector2(-185, -101)
+texture = ExtResource("67_vksp8")
+
+[node name="Microphone" type="Sprite2D" parent="Gentleman_club/Decorations"]
+position = Vector2(-79, 43)
+texture = ExtResource("68_vfmw4")
+
+[node name="Bag" type="Sprite2D" parent="Gentleman_club/Decorations"]
+position = Vector2(-242, 56)
+texture = ExtResource("70_c6ouj")
+
+[node name="Solid Decorations" type="Node2D" parent="Gentleman_club"]
+
+[node name="Stage" parent="Gentleman_club/Solid Decorations" instance=ExtResource("7_eg0pw")]
+position = Vector2(-176, 125)
+sprite = ExtResource("71_3yrgs")
+
+[node name="Sprite2D" parent="Gentleman_club/Solid Decorations/Stage" index="0"]
+texture = ExtResource("71_3yrgs")
+
+[node name="CollisionShape2D" parent="Gentleman_club/Solid Decorations/Stage" index="1"]
+position = Vector2(-2.5, -1)
+shape = SubResource("RectangleShape2D_lnalx")
+
+[node name="CollisionShape2D" parent="Gentleman_club/Solid Decorations/Stage/Area2D" index="0"]
+shape = SubResource("CircleShape2D_ep722")
+
+[node name="Interactables" type="Node2D" parent="Gentleman_club"]
+
+[node name="Botle" parent="Gentleman_club/Interactables" instance=ExtResource("27_ogvw7")]
+position = Vector2(-242, 56)
+answer = "How do we even open bottles?"
+
+[node name="Sprite2D" parent="Gentleman_club/Interactables/Botle" index="0"]
+texture = ExtResource("69_t2d14")
+
+[node name="CollisionShape2D" parent="Gentleman_club/Interactables/Botle" index="1"]
+position = Vector2(23.5, 2.75)
+shape = SubResource("RectangleShape2D_ug8dq")
+
+[node name="Funky" type="Node2D" parent="Gentleman_club"]
+
+[node name="Door to gentle corridort" parent="Gentleman_club/Funky" node_paths=PackedStringArray("where") instance=ExtResource("12_lhcv3")]
+position = Vector2(228, 83)
+where = NodePath("../../../Corridor_gentleman/Door to gentleman club")
+
+[node name="Sprite2D" parent="Gentleman_club/Funky/Door to gentle corridort" index="0"]
+texture = ExtResource("65_87xu7")
+
+[node name="CollisionShape2D" parent="Gentleman_club/Funky/Door to gentle corridort" index="1"]
+position = Vector2(-20.6101, 37.9661)
+shape = SubResource("RectangleShape2D_nghkh")
+
+[node name="Red Bean" parent="Gentleman_club" instance=ExtResource("36_shsjf")]
+position = Vector2(-131, 29)
+
+[node name="Sprite2D" parent="Gentleman_club/Red Bean" index="0"]
+texture = ExtResource("73_5w3ra")
+
+[node name="CollisionShape2D" parent="Gentleman_club/Red Bean" index="1"]
+position = Vector2(-4, 2)
+shape = SubResource("RectangleShape2D_051dr")
+
+[node name="DialogueComponent" parent="Gentleman_club/Red Bean" instance=ExtResource("38_jtg42")]
+lines = Array[ExtResource("38_uqjk0")]([SubResource("Resource_ptxiy")])
+
+[node name="Pink Shortie" parent="Gentleman_club" instance=ExtResource("36_shsjf")]
+position = Vector2(21, -100)
+
+[node name="Sprite2D" parent="Gentleman_club/Pink Shortie" index="0"]
+position = Vector2(-2, -13)
+texture = ExtResource("74_porr6")
+
+[node name="CollisionShape2D" parent="Gentleman_club/Pink Shortie" index="1"]
+position = Vector2(-22, -26.5)
+shape = SubResource("RectangleShape2D_ii5jo")
+
+[node name="DialogueComponent" parent="Gentleman_club/Pink Shortie" instance=ExtResource("38_jtg42")]
+lines = Array[ExtResource("38_uqjk0")]([SubResource("Resource_7uxwy")])
+
+[node name="Yellow Square" parent="Gentleman_club" instance=ExtResource("36_shsjf")]
+position = Vector2(-5, 115)
+
+[node name="Sprite2D" parent="Gentleman_club/Yellow Square" index="0"]
+texture = ExtResource("74_epnh5")
+
+[node name="CollisionShape2D" parent="Gentleman_club/Yellow Square" index="1"]
+position = Vector2(-13.5, 5)
+shape = SubResource("RectangleShape2D_5oyb3")
+
+[node name="DialogueComponent" parent="Gentleman_club/Yellow Square" instance=ExtResource("38_jtg42")]
+lines = Array[ExtResource("38_uqjk0")]([SubResource("Resource_oly6c")])
+
+[node name="White cross" parent="Gentleman_club" instance=ExtResource("36_shsjf")]
+position = Vector2(67, 121)
+
+[node name="Sprite2D" parent="Gentleman_club/White cross" index="0"]
+texture = ExtResource("75_w301q")
+
+[node name="CollisionShape2D" parent="Gentleman_club/White cross" index="1"]
+position = Vector2(13.25, 1)
+shape = SubResource("RectangleShape2D_ko68w")
+
+[node name="DialogueComponent" parent="Gentleman_club/White cross" instance=ExtResource("38_jtg42")]
+lines = Array[ExtResource("38_uqjk0")]([SubResource("Resource_guqf6")])
+
 [node name="Player" parent="." instance=ExtResource("26_74o7g")]
-position = Vector2(152, 518)
+position = Vector2(1092, 318)
 
 [node name="Crowbar" parent="." instance=ExtResource("23_50ryk")]
 position = Vector2(959, 1344)
@@ -1285,7 +1523,7 @@ sprite = ExtResource("54_co4cu")
 texture = ExtResource("54_co4cu")
 
 [node name="CollisionShape2D" parent="Crowbar/Pickable" index="0"]
-shape = SubResource("CapsuleShape2D_18coh")
+shape = SubResource("CapsuleShape2D_xboa5")
 
 [node name="Fish" parent="." instance=ExtResource("23_50ryk")]
 position = Vector2(1072, 223)
@@ -1297,7 +1535,7 @@ texture = ExtResource("28_umv22")
 
 [node name="CollisionShape2D" parent="Fish/Pickable" index="0"]
 position = Vector2(0, -18)
-shape = SubResource("CapsuleShape2D_cqr6h")
+shape = SubResource("CapsuleShape2D_rupm7")
 
 [node name="Key" parent="." instance=ExtResource("23_50ryk")]
 position = Vector2(1332, 1332)
@@ -1309,7 +1547,7 @@ texture = ExtResource("29_h1thq")
 
 [node name="CollisionShape2D" parent="Key/Pickable" index="0"]
 position = Vector2(1, -18)
-shape = SubResource("CapsuleShape2D_u6x3a")
+shape = SubResource("CapsuleShape2D_xsr1j")
 
 [node name="Gentleman Hat" parent="." instance=ExtResource("23_50ryk")]
 position = Vector2(845, 1280)
@@ -1322,7 +1560,7 @@ texture = ExtResource("24_3llev")
 
 [node name="CollisionShape2D" parent="Gentleman Hat/Pickable" index="0"]
 position = Vector2(1, -18)
-shape = SubResource("CapsuleShape2D_mhik8")
+shape = SubResource("CapsuleShape2D_2nhni")
 
 [node name="Ball" parent="." instance=ExtResource("23_50ryk")]
 position = Vector2(1373, 330)
@@ -1333,7 +1571,7 @@ sprite = ExtResource("30_5napu")
 texture = ExtResource("30_5napu")
 
 [node name="CollisionShape2D" parent="Ball/Pickable" index="0"]
-shape = SubResource("CapsuleShape2D_sojvo")
+shape = SubResource("CapsuleShape2D_a5f8j")
 
 [node name="Hero Mask" parent="." instance=ExtResource("23_50ryk")]
 position = Vector2(281, 1269)
@@ -1344,7 +1582,7 @@ sprite = ExtResource("58_1j738")
 texture = ExtResource("58_1j738")
 
 [node name="CollisionShape2D" parent="Hero Mask/Pickable" index="0"]
-shape = SubResource("CapsuleShape2D_tcrcd")
+shape = SubResource("CapsuleShape2D_0744u")
 
 [connection signal="body_entered" from="Stinky stuff/wewe" to="VerticalCamera" method="_on_wewe_body_entered"]
 [connection signal="body_entered" from="Stinky stuff/pierd" to="Player_room/Camera2D" method="_on_pierd_body_entered"]
@@ -1373,12 +1611,22 @@ shape = SubResource("CapsuleShape2D_tcrcd")
 [editable path="Corridor_rand/Solid Decorations/Speaker"]
 [editable path="Corridor_rand/Solid Decorations/Vending Machine"]
 [editable path="Corridor_rand/Funky/Crazy room inside"]
+[editable path="Corridor_rand/Interactables/Vending Machine"]
 [editable path="Corridor_rand/Green kid"]
+[editable path="Corridor_gentleman/Interactables/Statue"]
+[editable path="Corridor_gentleman/Interactables/Clock"]
 [editable path="Corridor_gentleman/Solid Decorations/Globus"]
 [editable path="Corridor_gentleman/Solid Decorations/Statue"]
 [editable path="Corridor_gentleman/Solid Decorations/Hand"]
 [editable path="Corridor_gentleman/Purple circle"]
 [editable path="Corridor_gentleman/Door to gentleman club"]
+[editable path="Gentleman_club/Solid Decorations/Stage"]
+[editable path="Gentleman_club/Interactables/Botle"]
+[editable path="Gentleman_club/Funky/Door to gentle corridort"]
+[editable path="Gentleman_club/Red Bean"]
+[editable path="Gentleman_club/Pink Shortie"]
+[editable path="Gentleman_club/Yellow Square"]
+[editable path="Gentleman_club/White cross"]
 [editable path="Crowbar"]
 [editable path="Fish"]
 [editable path="Key"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dyaf71ki5n5um"
-path="res://.godot/imported/redbean.png-29ba90bed6e5947b98d90b88a8e4c125.ctex"
+uid="uid://dibpabvti0iuu"
+path="res://.godot/imported/whiteX.png-b431d2317a8d8ee74bbbebbae4a4769e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/gentleman club/redbean.png"
-dest_files=["res://.godot/imported/redbean.png-29ba90bed6e5947b98d90b88a8e4c125.ctex"]
+source_file="res://sprites/npc/whiteX.png"
+dest_files=["res://.godot/imported/whiteX.png-b431d2317a8d8ee74bbbebbae4a4769e.ctex"]
 
 [params]
 
