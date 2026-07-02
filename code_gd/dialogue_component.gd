@@ -35,10 +35,10 @@ func on_interact() -> void:
 	get_parent().get_node("Sprite2D").material = mat
 
 func check_requirment(req:String, cond:bool):
-	if(req == player.item_name()):
-		return true
 	if(req == ""):
 		return true
+	if(req == player.item_name()):
+		return true 
 	if(Flags.get(req) == cond):
 		return true
 	

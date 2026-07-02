@@ -1,6 +1,8 @@
 extends CharacterBody2D
 
-const SPEED:float = 350.0
+signal changed_item
+
+const SPEED:float = 320.0
 const JUMP_VELOCITY:float = -500.0
 var can_jump:bool = true
 var proccesing_coyote:bool = false
@@ -61,6 +63,7 @@ func change_item():
 		ui_item_name(item_name())
 	else:
 		$Holded_item.visible = false
+	changed_item.emit()
 		
 func ui_item_name(item_title:String):
 	$UI/Item_name.start()
@@ -71,6 +74,7 @@ func say(text: String, speed: float = 40, wait:float = 2):
 	$Sprite2D.visible = true
 	$Text.visible = true
 	$Text.text = text
+	$Speach.stop()
 	
 	if(text.length() < 12):
 		$Text.add_theme_font_size_override("font_size", 20)
@@ -81,8 +85,8 @@ func say(text: String, speed: float = 40, wait:float = 2):
 		$Text.visible_characters = i
 		await get_tree().create_timer(1 / speed).timeout
 		
-	await get_tree().create_timer(wait).timeout
-	shut_up()
+	$Speach.wait_time = wait
+	$Speach.start()
 
 func shut_up():
 	$Sprite2D.visible = false
@@ -162,3 +166,7 @@ func _on_pause_in_jumps_timeout() -> void:
 
 func _on_item_name_timeout() -> void:
 	$"UI/Item title".text = ""
+
+
+func _on_speach_timeout() -> void:
+	shut_up()

@@ -133,6 +133,10 @@ shape = SubResource("CircleShape2D_ynjrc")
 position = Vector2(0, 24.5)
 shape = SubResource("RectangleShape2D_nh3fm")
 
+[node name="Speach" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
 [node name="Coyot" type="Timer" parent="."]
 wait_time = 0.1
 one_shot = true
@@ -170,6 +174,7 @@ horizontal_alignment = 2
 vertical_alignment = 1
 autowrap_mode = 2
 
+[connection signal="timeout" from="Speach" to="." method="_on_speach_timeout"]
 [connection signal="timeout" from="Coyot" to="." method="_on_coyot_timeout"]
 [connection signal="timeout" from="Jump_buffering" to="." method="_on_jump_buffering_timeout"]
 [connection signal="timeout" from="Pause_in_jumps" to="." method="_on_pause_in_jumps_timeout"]

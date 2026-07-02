@@ -20,7 +20,7 @@ func _ready() -> void:
 	$CollisionShape2D.shape = $CollisionShape2D.shape.duplicate()
 
 func _process(delta: float) -> void:
-	if(inside == true and Input.is_action_just_pressed("interact")):
+	if(inside == true and Input.is_action_just_pressed("interact") and player.can_move == true):
 		interact()
 	
 
@@ -38,3 +38,9 @@ func _on_body_exited(body: Node2D) -> void:
 		inside = false
 		player = body
 		$Sprite2D.material = null
+
+
+func _on_player_changed_item() -> void:
+	if(self.name == "Pink Shortie") and (player != null):
+		if(player.item_name() != "Gentleman hat"):
+			interact()
