@@ -42,5 +42,4 @@ func _on_body_exited(body: Node2D) -> void:
 
 func _on_player_changed_item() -> void:
 	if(self.name == "Pink Shortie") and (player != null):
-		if(player.item_name() != "Gentleman hat"):
-			interact()
+		interact()

@@ -1,10 +1,16 @@
 extends Node2D
 
 @export var lines:Array[String] = []
+var player:Node2D
 
 func on_interact() -> void:
 	var rand_line_index:int = randi_range(0, lines.size() - 1)
-	say(lines[rand_line_index])
+	player = get_parent().player
+	if(player.item_name() != "Gentleman hat"):
+		say(lines[rand_line_index])
+	else:
+		shut_up()
+
 
 func say(text: String, speed: float = 60):
 	$Sprite2D.visible = true
