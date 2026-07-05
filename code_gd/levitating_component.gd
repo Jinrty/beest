@@ -6,7 +6,7 @@ var top_pos_y:int
 func _ready() -> void:
 	top_pos_y = get_parent().position.y
 
-func on_signal():
+func on_signal() -> void:
 	var parent = get_parent()
 	var tween:Tween = get_tree().create_tween()
 	tween.set_trans(Tween.TRANS_CIRC)

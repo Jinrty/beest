@@ -14,6 +14,8 @@ func interact() -> void:
 			i.on_interact()
 			$Sprite2D.material = null
 
+func togle_collision() -> void:
+	$CollisionShape2D.disabled = !$CollisionShape2D.disabled
 
 func _ready() -> void:
 	get_parent().set_editable_instance(self, true)

@@ -17,7 +17,6 @@ var can_move:bool = true
 var inventory:Array = ["Nothing"]
 var current_item:int = 0
 
-
 func take_input() -> void:
 	if (can_move == false):
 		return
@@ -49,6 +48,12 @@ func item_name() -> String:
 		return ""
 	else:
 		return inventory[current_item].title
+
+func has_item(item_name:String) -> bool:
+	for i in inventory.slice(1):
+		if i.title == item_name:
+			return true
+	return false
 
 func change_item():
 	if (inventory.is_empty()):

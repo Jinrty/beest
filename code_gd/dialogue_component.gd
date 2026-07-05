@@ -10,6 +10,7 @@ var lines_array:Array = []
 var item_give:Node2D
 
 func on_interact() -> void:
+	shut_up()
 	player = get_parent().player
 	lines_array = []
 	for x in lines:
@@ -23,10 +24,11 @@ func on_interact() -> void:
 			if(x.item != null):
 				item_give = get_node(x.item)
 	path_chosen = false
-	player.can_move = false
+	get_parent().togle_collision()
+	player.shut_up()
 	for i in lines_array:
 		await say(i)
-	player.can_move = true
+	get_parent().togle_collision()
 	if(item_give != null):
 		player.add_item(item_give)
 	#That is adding hover shader but it shouldnt be here
