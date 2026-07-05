@@ -33,13 +33,24 @@ func take_input() -> void:
 			$Jump_buffering.start()
 			buffer_jump = true
 	
-func add_item(item):
+func add_item(item) -> void:
 	inventory.append(item)
 	current_item = inventory.size() -1
 	hold_item(item)
 	say(item.title, 80, 1.5)
 
-func hold_item(item):
+func remove_item(item:String) -> void:
+	for i in inventory.slice(1):
+		if i.title == item:
+			inventory.erase(i)
+			i.queue_free()
+		
+		if inventory.is_empty():
+			current_item = 0
+		else:
+			current_item = inventory.size() - 1
+
+func hold_item(item) -> void:
 	$Holded_item.visible = true
 	$Holded_item.texture = item.sprite
 
@@ -55,7 +66,7 @@ func has_item(item_name:String) -> bool:
 			return true
 	return false
 
-func change_item():
+func change_item() -> void:
 	if (inventory.is_empty()):
 		return
 	if (current_item == inventory.size() - 1):
@@ -70,12 +81,12 @@ func change_item():
 		$Holded_item.visible = false
 	changed_item.emit()
 		
-func ui_item_name(item_title:String):
+func ui_item_name(item_title:String) -> void:
 	$UI/Item_name.start()
 	$"UI/Item title".text = item_title
 	
 	
-func say(text: String, speed: float = 40, wait:float = 2):
+func say(text: String, speed: float = 40, wait:float = 2) -> void:
 	$Sprite2D.visible = true
 	$Text.visible = true
 	$Text.text = text
@@ -93,7 +104,7 @@ func say(text: String, speed: float = 40, wait:float = 2):
 	$Speach.wait_time = wait
 	$Speach.start()
 
-func shut_up():
+func shut_up() -> void:
 	$Sprite2D.visible = false
 	$Text.visible = false
 	

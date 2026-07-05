@@ -1,6 +1,6 @@
 extends Node
 
-var handsome:bool = true
-var killed_someone:bool = false
 
 var pipe_block:bool = false
+
+var green_kid_quest_completed:bool = false
