@@ -6,4 +6,5 @@ class_name DialogueLine
 @export var requirement:String = ""
 @export var condition:bool = true
 @export var item:NodePath
+@export var taking_item:bool = true
 @export var variable:String = ""

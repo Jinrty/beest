@@ -9,11 +9,13 @@ var path_chosen:bool = false
 var lines_array:Array = []
 var item_give:Node2D
 var item_remove:String
+var if_remove:bool
 
 func on_interact() -> void:
 	shut_up()
 	player = get_parent().player
 	lines_array = []
+	item_give = null
 	for x in lines:
 		if(path_chosen == false):
 			if(check_requirment(x.requirement, x.condition)):
@@ -25,6 +27,7 @@ func on_interact() -> void:
 			if(x.item != null):
 				item_give = get_node(x.item)
 				item_remove = x.requirement
+				if_remove = x.taking_item
 	path_chosen = false
 	get_parent().togle_collision()
 	player.shut_up()
@@ -33,7 +36,8 @@ func on_interact() -> void:
 	get_parent().togle_collision()
 	if(item_give != null):
 		player.add_item(item_give)
-		player.remove_item(item_remove)
+		if(if_remove):
+			player.remove_item(item_remove)
 	#That is adding hover shader but it shouldnt be here
 	var mat = ShaderMaterial.new()
 	mat.shader = load("res://shaders/itemOutline.gdshader")
