@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://beov2cxfgokf"]
+
+[ext_resource type="Texture2D" uid="uid://sp2vacibkcux" path="res://sprites/smth/buble.png" id="1_85vyk"]
+[ext_resource type="Script" path="res://code_gd/random_line_component.gd" id="1_mir2n"]
+[ext_resource type="FontFile" uid="uid://bq0rbcthr4hc8" path="res://fonts/SourGummy-VariableFont_wdth,wght.ttf" id="2_0cfql"]
+
+[node name="Random line_component" type="Node2D"]
+script = ExtResource("1_mir2n")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+z_index = 1
+texture = ExtResource("1_85vyk")
+
+[node name="Text" type="Label" parent="."]
+visible = false
+z_index = 1
+offset_left = -64.0
+offset_top = -34.0
+offset_right = 60.0
+offset_bottom = 26.0
+theme_override_colors/font_color = Color(0.0687983, 0.0687983, 0.0687983, 1)
+theme_override_colors/font_shadow_color = Color(0.864675, 0.864675, 0.864675, 1)
+theme_override_fonts/font = ExtResource("2_0cfql")
+theme_override_font_sizes/font_size = 12
+text = "Someting"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+visible_characters = 15
+visible_ratio = 1.875
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
