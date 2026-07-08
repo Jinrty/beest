@@ -15,6 +15,7 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 		player = body
 		var wherewhere = where.get_node("Exit")
 		player.teleport(wherewhere)
+		player.velocity.y = 0
 		Flags.pipe_block = true
 		$CanPass.start()
 		  

@@ -20,6 +20,7 @@ var quest_with_white_x_completed:bool = false
 
 var started_post_quest:bool = false
 var love_given:bool = false
+var imp_fix:bool = false
 var got_post_number:bool = false
 var purple_guard_quest_completed:bool = false
 
@@ -27,3 +28,8 @@ var apologize_quest_start:bool = false
 var red_bean_command:bool = false
 var apologized:bool = false
 var apologize_completed:bool = false
+
+var blue_romb_start_quest:bool = true
+var blue_rom_quest_completed:bool = false
+
+var spoil_warning:bool = false
