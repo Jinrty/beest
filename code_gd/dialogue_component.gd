@@ -11,11 +11,14 @@ var item_give:Node2D
 var item_remove:String
 var if_remove:bool
 
+var imp_var:bool
+
 func on_interact() -> void:
 	shut_up()
 	player = get_parent().player
 	lines_array = []
 	item_give = null
+	
 	for x in lines:
 		if(path_chosen == false):
 			if(check_requirment(x.requirement, x.condition)):
@@ -28,12 +31,17 @@ func on_interact() -> void:
 				item_give = get_node(x.item)
 				item_remove = x.requirement
 				if_remove = x.taking_item
+				imp_var = x.imp_var
 	path_chosen = false
 	get_parent().togle_collision()
 	player.shut_up()
 	for i in lines_array:
 		await say(i)
 	get_parent().togle_collision()
+	
+	if(imp_var):
+		player.remove_item(item_remove)
+		player.change_item()
 	if(item_give != null):
 		player.add_item(item_give)
 		if(if_remove):

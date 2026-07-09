@@ -8,6 +8,7 @@ enum Type {
 
 var player:Node2D = null
 @export var type:Type
+@export var cheat:bool = false
 
 var move_x:bool = false
 var offset_x:float = 0
@@ -27,12 +28,15 @@ func _physics_process(delta: float) -> void:
 			global_position.y = player.position.y + offset_y
 		elif(direction == "up" and player.velocity.y < 0):
 			global_position.y = player.position.y + offset_y
+	
 		
 		
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if(body.name == "Player"):
 		make_current()
+		if(self.cheat == true and Flags.blue_rom_quest_completed == true):
+			get_tree().change_scene_to_file("res://scenes/ending.tscn")
 
 
 func _on_left_body_entered(body: Node2D) -> void:
