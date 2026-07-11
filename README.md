@@ -1,10 +1,10 @@
-# Hotel Talk by Jinrty 
+<h1 align="center">Hotel Talk</h1>
+
+*Simple game about exploring hotel and talking with various NPCs inspired by Wuppo*
 
 <p align="center">
-  <img src="YOUR_GIF.gif" alt="Gameplay GIF" width="640">
+  <img src="hotel_game_gif.gif" alt="Gameplay GIF" width="640">
 </p>
-
-### Simple game about exploring hotel and talking with various NPCs inspired by Wuppo
 
 ## How to play
 
