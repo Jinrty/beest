@@ -12,7 +12,7 @@
 https://jinrty.itch.io/hotel-talk
 
 <br>
-### OR
+<h4>OR</h4>
 <br>
 
 ### Download Godot 
