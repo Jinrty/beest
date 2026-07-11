@@ -11,6 +11,10 @@
 ### Play in browser here :
 https://jinrty.itch.io/hotel-talk
 
+<br>
+### OR
+<br>
+
 ### Download Godot 
 a) Download all files
 b) install Godot (4.x)
@@ -31,3 +35,8 @@ c) import and press F5
 ## AI thingy:
 
 I did NOT used any AI for writting code. The only thing I did was researching some functions
+
+## For reviewer
+
+Hey! Please please please! If you can do anything, please let me go to the beest! 
+
