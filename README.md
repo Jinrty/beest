@@ -36,6 +36,14 @@ c) import and press F5
 
 I did NOT used any AI for writting code. The only thing I did was researching some functions
 
+## How to contribute
+
+I am kind of writting it only because it's a requirment. I never expect anyone to contribute anything. HOWEVER you are welcome to do so.
+If you will, please:
+- Create new branch
+- Commit your changes
+- Open pull request
+
 ## For reviewer
 
 Hey! Please please please! If you can do anything, please let me go to the beest! 
