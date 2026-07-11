@@ -3,7 +3,7 @@
 *Simple game about exploring hotel and talking with various NPCs inspired by Wuppo*
 
 <p align="center">
-  <img src="hotel_game_gif.gif" alt="Gameplay GIF" width="640">
+  <img src="hotel_talk_gif.gif" alt="Gameplay GIF" width="640">
 </p>
 
 ## How to play
