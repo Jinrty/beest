@@ -2833,7 +2833,7 @@ position = Vector2(-4, -126)
 lines = Array[ExtResource("38_uqjk0")]([SubResource("Resource_k70wp"), SubResource("Resource_tnm68"), SubResource("Resource_fwgdb"), SubResource("Resource_hknc7"), SubResource("Resource_xohxb"), SubResource("Resource_wnhb7"), SubResource("Resource_g36pm"), SubResource("Resource_66423"), SubResource("Resource_hhbd1"), SubResource("Resource_cvpg2"), SubResource("Resource_hfjls")])
 
 [node name="Player" parent="." instance=ExtResource("26_74o7g")]
-position = Vector2(96, 544)
+position = Vector2(1224, 411)
 
 [node name="Crowbar" parent="." instance=ExtResource("23_50ryk")]
 position = Vector2(638, 810)
