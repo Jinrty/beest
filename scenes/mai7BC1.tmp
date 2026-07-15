@@ -133,7 +133,7 @@ size = Vector2(168.5, 383.5)
 size = Vector2(210, 373)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0bwka"]
-size = Vector2(682, 291)
+size = Vector2(682, 247)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bmhjn"]
 size = Vector2(79, 135)
@@ -1366,10 +1366,9 @@ position = Vector2(95, -66.5)
 shape = SubResource("RectangleShape2D_ldu54")
 
 [node name="Stop N" type="Area2D" parent="Stinky stuff"]
-position = Vector2(52, -7)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Stinky stuff/Stop N"]
-position = Vector2(43, 48.5)
+position = Vector2(43, 26.5)
 shape = SubResource("RectangleShape2D_0bwka")
 
 [node name="VerticalCamera" parent="." instance=ExtResource("1_agmlv")]
@@ -2833,7 +2832,7 @@ position = Vector2(-4, -126)
 lines = Array[ExtResource("38_uqjk0")]([SubResource("Resource_k70wp"), SubResource("Resource_tnm68"), SubResource("Resource_fwgdb"), SubResource("Resource_hknc7"), SubResource("Resource_xohxb"), SubResource("Resource_wnhb7"), SubResource("Resource_g36pm"), SubResource("Resource_66423"), SubResource("Resource_hhbd1"), SubResource("Resource_cvpg2"), SubResource("Resource_hfjls")])
 
 [node name="Player" parent="." instance=ExtResource("26_74o7g")]
-position = Vector2(96, 544)
+position = Vector2(1224, 411)
 
 [node name="Crowbar" parent="." instance=ExtResource("23_50ryk")]
 position = Vector2(638, 810)
@@ -2948,8 +2947,8 @@ shape = SubResource("CapsuleShape2D_b86bv")
 [connection signal="body_exited" from="Stinky stuff/Stop R" to="VerticalCamera" method="_on_stop_r_body_exited"]
 [connection signal="body_entered" from="Stinky stuff/Stop L" to="VerticalCamera" method="_on_stop_l_body_entered"]
 [connection signal="body_exited" from="Stinky stuff/Stop L" to="VerticalCamera" method="_on_stop_l_body_exited"]
-[connection signal="body_entered" from="Stinky stuff/Stop N" to="Rand_room/Camera2D" method="_on_stop_n_body_entered"]
-[connection signal="body_exited" from="Stinky stuff/Stop N" to="Rand_room/Camera2D" method="_on_stop_n_body_exited"]
+[connection signal="body_entered" from="Stinky stuff/Stop N" to="VerticalCamera" method="_on_stop_n_body_entered"]
+[connection signal="body_exited" from="Stinky stuff/Stop N" to="VerticalCamera" method="_on_stop_n_body_exited"]
 [connection signal="changed_item" from="Player" to="Gentleman_club/Pink Shortie" method="_on_player_changed_item"]
 
 [editable path="Player_room/Solid Decorations/Shelf"]

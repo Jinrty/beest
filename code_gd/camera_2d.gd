@@ -16,17 +16,27 @@ var move_y:bool = false
 var offset_y:float = 0
 var direction:String = ""
 
+var stop_r:bool = false
+var stop_l:bool = false
+var stop_n:bool = false
 
 func _physics_process(delta: float) -> void:
 	if(move_x == true):
 		if(direction == "left" and player.velocity.x < 0):
+			if stop_l:
+				return
 			global_position.x = player.position.x + offset_x
 		elif(direction == "right" and player.velocity.x > 0):
+			if stop_r:
+				return
 			global_position.x = player.position.x + offset_x
-	if(move_y == true):
+	elif(move_y == true):
 		if(direction == "down" and player.velocity.y > 0):
 			global_position.y = player.position.y + offset_y
 		elif(direction == "up" and player.velocity.y < 0):
+			print(self.get_path(), " | physics_process: ", stop_n)
+			if stop_n:
+				return
 			global_position.y = player.position.y + offset_y
 	
 		
@@ -107,3 +117,40 @@ func _on_pierd_body_entered(body: Node2D) -> void:
 			vert.make_current()
 			vert.global_position.y = body.global_position.y - 50
 			print("HUH")
+
+
+
+
+func _on_stop_r_body_entered(body: Node2D) -> void:
+	if(body.name == "Player"):
+		player = body
+		stop_r = true
+
+
+func _on_stop_r_body_exited(body: Node2D) -> void:
+	if(body.name == "Player"):
+		stop_r = false
+
+
+func _on_stop_l_body_entered(body: Node2D) -> void:
+	if(body.name == "Player"):
+		player = body
+		stop_l = true
+
+func _on_stop_l_body_exited(body: Node2D) -> void:
+	if(body.name == "Player"):
+		stop_l = false
+
+
+func _on_stop_n_body_entered(body: Node2D) -> void:
+	if(body.name == "Player"):
+		player = body
+		stop_n = true
+		print(self.get_path(), " | entered!")
+		print(stop_n)
+
+
+func _on_stop_n_body_exited(body: Node2D) -> void:
+	if(body.name == "Player"):
+		stop_n = false
+		pass
