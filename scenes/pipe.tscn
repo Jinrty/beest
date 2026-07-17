@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" path="res://code_gd/pipe.gd" id="1_l3fxj"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_740a3"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_80obw"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8g0gt"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5posl"]
 
 [node name="Pipe" type="Node2D"]
 script = ExtResource("1_l3fxj")
@@ -14,14 +14,14 @@ script = ExtResource("1_l3fxj")
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-shape = SubResource("RectangleShape2D_740a3")
+shape = SubResource("RectangleShape2D_80obw")
 
 [node name="Exit" type="Marker2D" parent="."]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-shape = SubResource("RectangleShape2D_8g0gt")
+shape = SubResource("RectangleShape2D_5posl")
 
 [node name="CanPass" type="Timer" parent="."]
 wait_time = 0.3

@@ -17,6 +17,11 @@ var can_move:bool = true
 var inventory:Array = ["Nothing"]
 var current_item:int = 0
 
+
+func _ready() -> void:
+	$Player_sprite.visible = false
+	can_move = false
+
 func take_input() -> void:
 	if (can_move == false):
 		return
@@ -186,3 +191,12 @@ func _on_item_name_timeout() -> void:
 
 func _on_speach_timeout() -> void:
 	shut_up()
+
+
+func _on_node_2d_finished_intro_animation() -> void:
+	say("I better check that out")
+	can_move = true
+
+func _on_intro_remove() -> void:
+	$Player_sprite.visible = true
+	position = Vector2(1221, 411)

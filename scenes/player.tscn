@@ -120,8 +120,8 @@ visible_ratio = 1.875
 [node name="Player_sprite" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_swla6")
-animation = &"walk"
-autoplay = "walk"
+animation = &"standing"
+autoplay = "standing"
 
 [node name="Holded_item" type="Sprite2D" parent="."]
 

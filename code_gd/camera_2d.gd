@@ -20,7 +20,16 @@ var stop_r:bool = false
 var stop_l:bool = false
 var stop_n:bool = false
 
+var decay:float = 0.8
+var max_offset:Vector2 = Vector2(100, 75)
+var max_roll:float = 0.1
+var trauma:float = 0.0
+var trauma_power:int = 2
+
 func _physics_process(delta: float) -> void:
+	if trauma != 0:
+		trauma = max(trauma - decay * delta, 0)
+		shake()
 	if(move_x == true):
 		if(direction == "left" and player.velocity.x < 0):
 			if stop_l:
@@ -154,3 +163,20 @@ func _on_stop_n_body_exited(body: Node2D) -> void:
 	if(body.name == "Player"):
 		stop_n = false
 		pass
+		
+
+func _ready() -> void:
+	randomize()
+		
+func small_shake() -> void:
+	trauma = 0.2
+
+func shake() -> void:
+	var amount = pow(trauma, trauma_power)
+	rotation = max_roll * amount * randf_range(-1, 1)
+	offset.x = max_offset.x * amount * randf_range(-1, 1)
+	offset.y = max_offset.y * amount * randf_range(-1, 1)
+
+
+func _on_intro_loud() -> void:
+	small_shake()
