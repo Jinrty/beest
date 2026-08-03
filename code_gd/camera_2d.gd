@@ -1,5 +1,7 @@
 extends Camera2D
 
+signal ending
+
 enum Type {
 	Still,
 	Movable_x,
@@ -55,7 +57,7 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 	if(body.name == "Player"):
 		make_current()
 		if(self.cheat == true and Flags.blue_rom_quest_completed == true):
-			get_tree().change_scene_to_file("res://scenes/ending.tscn")
+			ending.emit()
 
 
 func _on_left_body_entered(body: Node2D) -> void:
@@ -169,7 +171,7 @@ func _ready() -> void:
 	randomize()
 		
 func small_shake() -> void:
-	trauma = 0.2
+	trauma = 0.3
 
 func shake() -> void:
 	var amount = pow(trauma, trauma_power)

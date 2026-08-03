@@ -23,6 +23,9 @@ func _ready() -> void:
 	can_move = false
 
 func take_input() -> void:
+	if Input.is_action_just_pressed("skip"):
+		Flags.blue_rom_quest_completed = true
+	
 	if (can_move == false):
 		return
 	
@@ -200,3 +203,9 @@ func _on_node_2d_finished_intro_animation() -> void:
 func _on_intro_remove() -> void:
 	$Player_sprite.visible = true
 	position = Vector2(1221, 411)
+
+
+func _on_outro_fallen() -> void:
+	$Player_sprite.visible = false
+	position = Vector2(1215, 428)
+	can_move = false

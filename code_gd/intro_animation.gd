@@ -10,10 +10,14 @@ func _ready() -> void:
 	$Intro.animation = "sleep"
 	$Intro.play()
 
-
+func _process(delta: float) -> void:
+	if(Input.is_action_just_pressed("skip")):
+		finished_intro_animation.emit()
+		remove.emit()
+		queue_free()
 		
 
-func say(text: String, speed: float = 50, wait:float = 2) -> void:
+func say(text: String, speed: float = 50, wait:float = 3) -> void:
 	$LoudBuble.visible = true
 	$Text.visible = true
 	$Text.text = text
@@ -35,15 +39,13 @@ func _on_intro_animation_finished() -> void:
 		$Intro.animation = "sleep"
 		$Intro.play()
 	else:
-		say("Interact with E...")
+		say("Oh fuck! what's happening??!")
 		loud.emit()
 		$Intro.animation = "wake"
 		$Intro.play()
-		await get_tree().create_timer(2.5).timeout #2.5
+		await get_tree().create_timer(3).timeout #2.5
 		$Text.visible = false
 		$LoudBuble.visible = false
-		await get_tree().create_timer(1).timeout #2
-		say("Oh fuck! what's happening??!")
 		await get_tree().create_timer(2).timeout #2
 		finished_intro_animation.emit()
 		
