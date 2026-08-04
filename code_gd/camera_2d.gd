@@ -182,3 +182,7 @@ func shake() -> void:
 
 func _on_intro_loud() -> void:
 	small_shake()
+
+
+func _on_outro_loud() -> void:
+	small_shake()

@@ -207,5 +207,10 @@ func _on_intro_remove() -> void:
 
 func _on_outro_fallen() -> void:
 	$Player_sprite.visible = false
+	$Holded_item.visible = false
 	position = Vector2(1215, 428)
 	can_move = false
+
+
+func _on_outro_anger() -> void:
+	say("I am breaking his knees... tomorow")

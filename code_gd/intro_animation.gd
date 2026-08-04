@@ -46,7 +46,7 @@ func _on_intro_animation_finished() -> void:
 		await get_tree().create_timer(3).timeout #2.5
 		$Text.visible = false
 		$LoudBuble.visible = false
-		await get_tree().create_timer(2).timeout #2
+		await get_tree().create_timer(1).timeout #2
 		finished_intro_animation.emit()
 		
 		var tween:Tween = get_tree().create_tween()
