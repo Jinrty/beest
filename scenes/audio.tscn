@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://b2sk808rqneoa"]
+
+[ext_resource type="Script" path="res://code_gd/audio.gd" id="1_3cqbg"]
+[ext_resource type="AudioStream" uid="uid://c5dr2glxjoygk" path="res://sounds/di di ding.mp3" id="1_5tnou"]
+[ext_resource type="AudioStream" uid="uid://rlictuqovash" path="res://sounds/background music.mp3" id="3_cf7lx"]
+
+[node name="Audio" type="Node"]
+script = ExtResource("1_3cqbg")
+
+[node name="new item" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_5tnou")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_cf7lx")
+volume_db = -4.0
+parameters/looping = true

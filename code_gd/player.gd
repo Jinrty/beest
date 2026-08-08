@@ -23,9 +23,6 @@ func _ready() -> void:
 	can_move = false
 
 func take_input() -> void:
-	if Input.is_action_just_pressed("skip"):
-		Flags.blue_rom_quest_completed = true
-	
 	if (can_move == false):
 		return
 	
@@ -46,6 +43,7 @@ func add_item(item) -> void:
 	current_item = inventory.size() -1
 	hold_item(item)
 	say(item.title, 80, 1.5)
+	Audio.new_item()
 
 func remove_item(item:String) -> void:
 	for i in inventory.slice(1):

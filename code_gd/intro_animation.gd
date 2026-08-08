@@ -13,6 +13,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if(Input.is_action_just_pressed("skip")):
 		finished_intro_animation.emit()
+		Audio.music()
 		remove.emit()
 		queue_free()
 		
@@ -54,6 +55,7 @@ func _on_intro_animation_finished() -> void:
 		tween.tween_property($ColorRect, "position:y", $ColorRect.position.y - 80, 2)
 		tween.parallel().tween_property($ColorRect2, "position:y", $ColorRect2.position.y + 80, 2)
 		await tween.finished
+		Audio.music()
 		queue_free()
 		
 		
