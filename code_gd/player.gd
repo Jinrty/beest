@@ -14,6 +14,8 @@ var direction:int
 var jump_pause:bool = false
 var can_move:bool = true
 
+var fell:bool = false
+
 var inventory:Array = ["Nothing"]
 var current_item:int = 0
 
@@ -86,6 +88,8 @@ func change_item() -> void:
 	else:
 		$Holded_item.visible = false
 	changed_item.emit()
+	if(inventory.size() != 1):
+		Audio.switch()
 		
 func ui_item_name(item_title:String) -> void:
 	$UI/Item_name.start()
@@ -154,7 +158,7 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	if not is_on_floor():
-
+		fell = true
 		time_in_air += delta / 2.5
 		velocity.y += gravity * delta * (1.0 + time_in_air * 0.5)
 
@@ -163,9 +167,12 @@ func _physics_process(delta: float) -> void:
 			proccesing_coyote = true
 			already_on_floor = false
 		
-	if is_on_floor():
+	if is_on_floor():			
 		if(jump_pause == false):
 			jump_pause = true
+			if(fell == true):
+				Audio.fall()
+				fell = false
 			$Pause_in_jumps.start()
 		can_jump = true
 		time_in_air = 0

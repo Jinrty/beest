@@ -1,6 +1,7 @@
 extends Node2D
 
 var sleep_loop:int = 0
+var warning:bool = false
 
 signal finished_intro_animation
 signal remove
@@ -12,11 +13,17 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	if(Input.is_action_just_pressed("skip")):
-		finished_intro_animation.emit()
-		Audio.music()
-		remove.emit()
-		queue_free()
-		
+		if(warning == true):
+			finished_intro_animation.emit()
+			Audio.music()
+			remove.emit()
+			queue_free()
+		else:
+			warning = true
+			$Skip.visible = true
+			await get_tree().create_timer(2).timeout
+			$Skip.visible = false
+			
 
 func say(text: String, speed: float = 50, wait:float = 3) -> void:
 	$LoudBuble.visible = true

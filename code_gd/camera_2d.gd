@@ -114,6 +114,7 @@ func _on_top_body_exited(body: Node2D) -> void:
 
 func _on_wewe_body_entered(body: Node2D) -> void:
 	if body.name == "Player":
+		Audio.music_fade_in()
 		var vert = get_parent().get_node_or_null("VerticalCamera")
 		if vert != null:
 			vert.make_current()
@@ -186,3 +187,8 @@ func _on_intro_loud() -> void:
 
 func _on_outro_loud() -> void:
 	small_shake()
+
+
+func _on_wewe_body_exited(body: Node2D) -> void:
+	if(body.name == "Player"):
+		Audio.music_fade_out()

@@ -25,6 +25,7 @@ func _process(delta: float) -> void:
 			return
 		if(requires_item_use == false) and (requires_item_npc == false):
 			player.teleport(where)
+			Audio.door()
 			return
 		
 		if(requires_item_use == true):
