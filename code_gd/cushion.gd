@@ -13,9 +13,11 @@ func _on_body_entered(body: Node2D) -> void:
 			$Sprite2D.play("set3")
 			body.velocity.y = -1150
 			body.time_in_air = 0
+			Audio.sofa()
 			return
 		body.velocity.y = -700
 		body.time_in_air = 0
+		Audio.cushion()
 		
 
 func _ready() -> void:

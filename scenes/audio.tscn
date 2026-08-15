@@ -1,11 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://b2sk808rqneoa"]
+[gd_scene load_steps=9 format=3 uid="uid://b2sk808rqneoa"]
 
 [ext_resource type="Script" path="res://code_gd/audio.gd" id="1_3cqbg"]
 [ext_resource type="AudioStream" uid="uid://c5dr2glxjoygk" path="res://sounds/di di ding.mp3" id="1_5tnou"]
 [ext_resource type="AudioStream" uid="uid://rlictuqovash" path="res://sounds/background music.mp3" id="3_cf7lx"]
 [ext_resource type="AudioStream" uid="uid://dncvvrcdv7jsm" path="res://sounds/door.wav" id="4_eyuqd"]
-[ext_resource type="AudioStream" uid="uid://cdiwhdyxqgfk6" path="res://sounds/fall.wav" id="5_cnjb2"]
+[ext_resource type="AudioStream" uid="uid://cdiwwhwv6rqx5" path="res://sounds/fall2.wav" id="5_6q1n4"]
 [ext_resource type="AudioStream" uid="uid://b5nwjm7kdsgjp" path="res://sounds/switch.wav" id="6_65co1"]
+[ext_resource type="AudioStream" uid="uid://b4288ulu6hx6q" path="res://sounds/sofa.mp3" id="7_cckmj"]
+[ext_resource type="AudioStream" uid="uid://ms1coleaa56d" path="res://sounds/cushion.wav" id="8_xtjhx"]
 
 [node name="Audio" type="Node"]
 script = ExtResource("1_3cqbg")
@@ -26,11 +28,19 @@ stream = ExtResource("4_eyuqd")
 volume_db = 6.0
 
 [node name="Fall" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_cnjb2")
-volume_db = 7.0
+stream = ExtResource("5_6q1n4")
+volume_db = -2.0
 pitch_scale = 0.4
 
 [node name="Switch" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_65co1")
 volume_db = -8.0
 pitch_scale = 0.6
+
+[node name="Sofa" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_cckmj")
+volume_db = -8.0
+
+[node name="Cushion" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_xtjhx")
+pitch_scale = 0.8

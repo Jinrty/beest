@@ -23,3 +23,9 @@ func fall() -> void:
 
 func switch() -> void:
 	$Switch.play()
+	
+func sofa() -> void:
+	$Sofa.play()
+
+func cushion() -> void:
+	$Cushion.play()
